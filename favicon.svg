@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="#1D4ED8"/>
+
+  <g transform="translate(50,52)">
+    <!-- Heart outline -->
+    <path d="
+      M0,28
+      C-4,33 -38,18 -38,-7
+      C-38,-24 -26,-35 -15,-35
+      C-8,-35 -3,-31 0,-24
+      C3,-31 8,-35 15,-35
+      C26,-35 38,-24 38,-7
+      C38,18 4,33 0,28Z
+    " fill="none" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Arrow 1: top arc, left → right (clockwise) -->
+    <path d="M-20,-14 C-12,-30 12,-30 20,-14"
+          fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrowhead 1 (pointing down-right) -->
+    <polygon points="17,-21 24,-11 14,-11" fill="white"/>
+
+    <!-- Arrow 2: right arc, top-right → bottom-left -->
+    <path d="M23,-7 C28,10 14,24 1,22"
+          fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrowhead 2 (pointing left) -->
+    <polygon points="5,27 -4,21 5,17" fill="white"/>
+
+    <!-- Arrow 3: left arc, bottom → top-left -->
+    <path d="M-7,22 C-20,24 -28,10 -23,-7"
+          fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrowhead 3 (pointing up-right) -->
+    <polygon points="-26,-14 -17,-20 -17,-9" fill="white"/>
+  </g>
+</svg>

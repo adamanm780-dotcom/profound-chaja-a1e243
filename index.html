@@ -3,39 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RepairStation Wiesbaden – Smartphone, Laptop &amp; MacBook Reparatur</title>
-  <meta name="description" content="Professionelle Reparatur für Smartphone, Notebook und MacBook in Wiesbaden. Faire Preise, schnelle Reparaturzeiten, erfahrene Techniker. Jetzt anrufen: 0611–58589987">
+  <title>Juwelier Roza Wiesbaden – Goldschmuck in 14 &amp; 22 Karat</title>
+  <meta name="description" content="Juwelier Roza – exklusiver Goldschmuck in 14 und 22 Karat. Wellritzstraße 29, 65183 Wiesbaden. Mo–Sa 10–18 Uhr. Tel: 0611 73419779">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Juwelier Roza Wiesbaden">
+  <meta property="og:description" content="Exklusiver Goldschmuck in 14 und 22 Karat – für anspruchsvolle Kundinnen und Kunden.">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="superr.png" type="image/png">
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     /* ============================================================
        DESIGN TOKENS
     ============================================================ */
     :root {
-      --brand:        #1D4ED8;
-      --brand-light:  #3B82F6;
-      --brand-dark:   #1E3A8A;
-      --accent:       #F97316;
-      --accent-hover: #EA6F0A;
-      --dark:         #0F172A;
-      --dark-2:       #1E293B;
-      --text:         #1E293B;
-      --muted:        #64748B;
-      --border:       #E2E8F0;
-      --surface:      #F8FAFC;
-      --surface-2:    #F1F5F9;
-      --white:        #FFFFFF;
-      --shadow-sm:    0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
-      --shadow-md:    0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg:    0 10px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.06);
-      --radius-sm:    6px;
-      --radius-md:    12px;
-      --radius-lg:    20px;
-      --radius-xl:    28px;
-      --transition:   all .22s cubic-bezier(.4,0,.2,1);
+      --ivory:          #FAF8F4;
+      --cream:          #F3EDE2;
+      --cream-deep:     #EAE2D0;
+      --gold:           #C8A05C;
+      --gold-light:     #DBBE8A;
+      --gold-pale:      #F6EDD8;
+      --gold-hover:     #B08A3C;
+      --charcoal:       #1A1614;
+      --charcoal-2:     #2C2622;
+      --warm-800:       #4A3F38;
+      --warm-600:       #7A6B62;
+      --warm-400:       #A89E94;
+      --warm-200:       #E0D8CE;
+      --border:         rgba(200, 160, 92, 0.22);
+      --border-solid:   #DDD4C4;
+
+      --font-display:   'Cormorant Garamond', Georgia, serif;
+      --font-body:      'Jost', system-ui, sans-serif;
+
+      --ease:           cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --ease-out:       cubic-bezier(0.0, 0.0, 0.2, 1);
+      --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     /* ============================================================
@@ -44,177 +49,18 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
-      font-family: 'Inter', system-ui, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.6;
+      background: var(--ivory);
+      color: var(--charcoal);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.75;
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
     img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button { border: none; cursor: pointer; font-family: inherit; }
+    a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
-
-    /* ============================================================
-       TYPOGRAPHY
-    ============================================================ */
-    .h-display {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(2.25rem, 5vw, 3.75rem);
-      font-weight: 800;
-      line-height: 1.12;
-      letter-spacing: -0.03em;
-    }
-    .h1 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-      font-weight: 800;
-      line-height: 1.18;
-      letter-spacing: -0.025em;
-    }
-    .h2 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(1.375rem, 2.5vw, 2rem);
-      font-weight: 700;
-      line-height: 1.25;
-      letter-spacing: -0.02em;
-    }
-    .h3 {
-      font-size: 1.125rem;
-      font-weight: 700;
-      line-height: 1.3;
-    }
-    .lead {
-      font-size: clamp(1rem, 1.5vw, 1.175rem);
-      line-height: 1.7;
-    }
-    .label {
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    /* ============================================================
-       LAYOUT
-    ============================================================ */
-    .container {
-      width: 100%;
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .section { padding: 88px 0; }
-    .section--sm { padding: 64px 0; }
-    .section-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 14px;
-      border-radius: 100px;
-      background: rgba(29,78,216,.08);
-      color: var(--brand);
-      font-size: .8125rem;
-      font-weight: 600;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-    .section-header { margin-bottom: 56px; }
-    .section-header--center { text-align: center; }
-    .section-header p {
-      margin-top: 12px;
-      color: var(--muted);
-      max-width: 560px;
-    }
-    .section-header--center p { margin: 12px auto 0; }
-
-    /* Grid helpers */
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-
-    /* ============================================================
-       COMPONENTS — Buttons
-    ============================================================ */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 28px;
-      border-radius: var(--radius-md);
-      font-size: 1rem;
-      font-weight: 600;
-      transition: var(--transition);
-      white-space: nowrap;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-    .btn::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(255,255,255,0);
-      transition: background .18s;
-    }
-    .btn:hover::after { background: rgba(255,255,255,.07); }
-    .btn--primary {
-      background: var(--accent);
-      color: var(--white);
-      box-shadow: 0 4px 14px rgba(249,115,22,.35);
-    }
-    .btn--primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(249,115,22,.4);
-    }
-    .btn--secondary {
-      background: rgba(255,255,255,.10);
-      color: var(--white);
-      border: 1.5px solid rgba(255,255,255,.25);
-      backdrop-filter: blur(8px);
-    }
-    .btn--secondary:hover {
-      background: rgba(255,255,255,.18);
-      border-color: rgba(255,255,255,.4);
-      transform: translateY(-1px);
-    }
-    .btn--outline {
-      background: transparent;
-      color: var(--brand);
-      border: 1.5px solid var(--brand);
-    }
-    .btn--outline:hover {
-      background: var(--brand);
-      color: var(--white);
-      transform: translateY(-1px);
-    }
-    .btn--ghost {
-      background: transparent;
-      color: var(--text);
-      padding: 14px 20px;
-    }
-    .btn--ghost:hover { background: var(--surface); }
-    .btn--lg { padding: 17px 36px; font-size: 1.0625rem; }
-    .btn--sm { padding: 10px 20px; font-size: .875rem; }
-
-    /* ============================================================
-       COMPONENTS — Cards
-    ============================================================ */
-    .card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1.5px solid var(--border);
-      padding: 32px;
-      transition: var(--transition);
-    }
-    .card:hover {
-      border-color: rgba(29,78,216,.2);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-3px);
-    }
+    button { cursor: pointer; font-family: inherit; }
 
     /* ============================================================
        NAVIGATION
@@ -222,778 +68,1130 @@
     .nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 1000;
-      background: transparent;
-      transition: background .3s ease, box-shadow .3s ease;
-    }
-    .nav--scrolled {
-      background: var(--brand-dark);
-      box-shadow: 0 2px 20px rgba(0,0,0,.3);
-    }
-    .nav__inner {
+      z-index: 900;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 96px;
+      padding: 1.8rem 3.5rem;
+      transition: background 0.6s var(--ease), padding 0.5s var(--ease), border-color 0.5s;
+      border-bottom: 1px solid transparent;
     }
-    .nav__logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--white);
-      transition: color .22s;
+    .nav.is-scrolled {
+      background: rgba(250, 248, 244, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 1.1rem 3.5rem;
+      border-color: var(--border-solid);
     }
-    .nav--scrolled .nav__logo { color: var(--white); }
-    .nav__logo-icon {
-      width: 90px; height: 90px;
-      background: transparent;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
+    .nav__wordmark {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #fff;
+      transition: color 0.4s;
     }
+    .nav.is-scrolled .nav__wordmark { color: var(--charcoal); }
+
     .nav__links {
       display: flex;
+      gap: 2.8rem;
       align-items: center;
-      gap: 4px;
     }
-    .nav__link {
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      font-size: .9375rem;
-      font-weight: 500;
-      color: rgba(255,255,255,.85);
-      transition: var(--transition);
+    .nav__links a {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.78);
+      transition: color 0.3s;
     }
-    .nav--scrolled .nav__link { color: rgba(255,255,255,.85); }
-    .nav__link:hover {
-      background: rgba(255,255,255,.12);
-      color: var(--white);
-    }
-    .nav--scrolled .nav__link:hover {
-      background: rgba(255,255,255,.12);
-      color: var(--white);
-    }
-    .nav__cta {
-      background: var(--accent);
-      color: var(--white) !important;
-      border-radius: var(--radius-sm);
-      padding: 9px 18px;
-      font-weight: 600;
-      transition: var(--transition);
-    }
-    .nav__cta:hover {
-      background: var(--accent-hover) !important;
-      transform: translateY(-1px);
-    }
-    .nav--scrolled .nav__cta { color: var(--white) !important; }
+    .nav__links a:hover { color: var(--gold-light); }
+    .nav.is-scrolled .nav__links a { color: var(--warm-600); }
+    .nav.is-scrolled .nav__links a:hover { color: var(--gold); }
 
-    /* Hamburger */
+    .nav__phone {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.78);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 0.5rem 1.2rem;
+      transition: all 0.3s var(--ease);
+    }
+    .nav__phone:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+    .nav.is-scrolled .nav__phone {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+    .nav.is-scrolled .nav__phone:hover {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    /* HAMBURGER */
     .nav__hamburger {
       display: none;
       flex-direction: column;
       gap: 5px;
-      cursor: pointer;
-      padding: 8px;
-      border-radius: var(--radius-sm);
-      background: transparent;
-      transition: var(--transition);
+      background: none;
+      border: none;
+      padding: 4px;
     }
-    .nav__hamburger:hover { background: rgba(255,255,255,.1); }
-    .nav--scrolled .nav__hamburger:hover { background: rgba(255,255,255,.12); }
     .nav__hamburger span {
       display: block;
-      width: 22px; height: 2px;
-      background: var(--white);
-      border-radius: 2px;
-      transition: var(--transition);
+      width: 22px;
+      height: 1px;
+      background: #fff;
+      transition: all 0.3s var(--ease);
     }
-    .nav--scrolled .nav__hamburger span { background: var(--white); }
+    .nav.is-scrolled .nav__hamburger span { background: var(--charcoal); }
 
-    /* Mobile menu */
-    .nav__mobile {
-      display: none;
+    /* MOBILE MENU */
+    .menu-overlay {
       position: fixed;
       inset: 0;
-      z-index: 999;
-      background: var(--dark);
-      padding: 80px 24px 40px;
-      flex-direction: column;
-      gap: 8px;
+      background: rgba(26,22,20,0.55);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.45s var(--ease);
     }
-    .nav__mobile.is-open { display: flex; }
-    .nav__mobile a {
-      color: var(--white);
-      font-size: 1.25rem;
-      font-weight: 600;
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,.08);
+    .menu-overlay.is-open { opacity: 1; pointer-events: all; }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0; right: -100%;
+      width: min(340px, 82vw);
+      height: 100vh;
+      background: var(--ivory);
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 2.5rem 3rem;
+      gap: 0;
+      transition: right 0.5s var(--ease);
+    }
+    .mobile-menu.is-open { right: 0; }
+
+    .mobile-menu__close {
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      color: var(--warm-600);
+      line-height: 1;
+    }
+    .mobile-menu__link {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--charcoal);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border-solid);
+      transition: color 0.3s, padding-left 0.3s var(--ease);
       display: block;
     }
-    .nav__mobile a:last-child { border: none; }
-    .nav__mobile-close {
+    .mobile-menu__link:hover {
+      color: var(--gold);
+      padding-left: 0.5rem;
+    }
+    .mobile-menu__contact {
+      margin-top: auto;
+      padding-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--warm-400);
+      line-height: 1.9;
+    }
+    .mobile-menu__contact a { transition: color 0.3s; }
+    .mobile-menu__contact a:hover { color: var(--gold); }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    .hero {
+      position: relative;
+      height: 100dvh;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+
+    /* Video container */
+    .hero__video-wrap {
       position: absolute;
-      top: 20px; right: 20px;
-      background: rgba(255,255,255,.08);
-      border: none;
-      color: var(--white);
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer;
-      font-size: 1.25rem;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero__video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      will-change: opacity;
+    }
+    .hero__video--b { opacity: 0; }
+
+    /* Multi-layer overlay for depth */
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(to bottom,
+          rgba(10,8,7,0.55) 0%,
+          rgba(10,8,7,0.32) 45%,
+          rgba(10,8,7,0.72) 100%),
+        radial-gradient(ellipse at 50% 50%,
+          rgba(10,8,7,0.18) 30%,
+          rgba(10,8,7,0.45) 100%);
+    }
+
+    /* Subtle vignette grain using SVG filter */
+    .hero__grain {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      opacity: 0.04;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 180px;
+    }
+
+    /* Hero content */
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    /* HUIP ANIMATION – direkt über dem Logo */
+    .hero__rizz {
+      height: 90px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: -18px;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: opacity 1.4s var(--ease), transform 1.4s var(--ease);
+    }
+    .hero__rizz.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero__rizz img,
+    .hero__rizz video,
+    .hero__rizz canvas {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* ZUI – nur auf Mobile sichtbar, ersetzt Animation */
+    .hero__zui {
+      display: none;
+    }
+    /* ── VINE SCENE ─────────────────────────────────────────── */
+    .vine-scene {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      overflow: visible;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { .vine-scene { display: none; } }
+    #vineCanvas {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+
+    @keyframes zuiFadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* LOGO */
+    .hero__logo {
+      height: 160px;
+      width: auto;
+      object-fit: contain;
+      /* If logo is dark-on-white, enable this to make it white:
+         filter: brightness(0) invert(1); */
+    }
+
+    .hero__eyebrow {
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.55em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-top: 3rem;
+      opacity: 0;
+      transform: translateY(14px);
+      animation: heroFadeUp 0.9s 0.5s var(--ease) forwards;
+    }
+
+    .hero__headline {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(3.2rem, 8vw, 7rem);
+      line-height: 1.0;
+      color: #fff;
+      letter-spacing: 0.015em;
+      margin-top: 0.6rem;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: heroFadeUp 1s 0.7s var(--ease) forwards;
+    }
+    .hero__headline em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold-light);
+    }
+
+    .hero__rule {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.8rem auto;
+      opacity: 0;
+      animation: heroFadeIn 0.8s 1.0s forwards;
+    }
+
+    .hero__sub {
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.68);
+      max-width: 420px;
+      line-height: 1.9;
+      opacity: 0;
+      transform: translateY(14px);
+      animation: heroFadeUp 0.9s 1.0s var(--ease) forwards;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(14px);
+      animation: heroFadeUp 0.9s 1.2s var(--ease) forwards;
+    }
+
+    /* Scroll indicator */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      opacity: 0;
+      animation: heroFadeIn 1s 2s forwards;
+    }
+    .hero__scroll span {
+      font-size: 0.55rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 42px;
+      position: relative;
+      overflow: hidden;
+      background: rgba(255,255,255,0.12);
+    }
+    .hero__scroll-line::after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.55), transparent);
+      animation: scrollDrop 2.2s 2.5s infinite var(--ease);
     }
 
     /* ============================================================
-       HERO
+       BUTTONS
     ============================================================ */
-    .hero {
-      background: linear-gradient(135deg, #0b1f4b 0%, #0e3a8a 55%, #0e4fd1 100%);
-      color: var(--white);
-      padding: 160px 0 100px;
-      position: relative;
-      overflow: hidden;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      padding: 0.9rem 2.2rem;
+      transition: all 0.32s var(--ease);
+      white-space: nowrap;
     }
-    .hero::before {
+    .btn--gold {
+      background: var(--gold);
+      color: #fff;
+    }
+    .btn--gold:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(200,160,92,0.3);
+    }
+    .btn--ghost-white {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.5);
+      color: #fff;
+    }
+    .btn--ghost-white:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.8);
+      transform: translateY(-2px);
+    }
+    .btn--outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+    }
+    .btn--outline:hover {
+      background: var(--gold);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn--dark {
+      background: var(--charcoal);
+      color: #fff;
+    }
+    .btn--dark:hover {
+      background: var(--charcoal-2);
+      transform: translateY(-2px);
+    }
+
+    /* ============================================================
+       SECTION COMMONS
+    ============================================================ */
+    .section-label {
+      display: block;
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.52em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: 0.015em;
+      color: var(--charcoal);
+    }
+    .section-heading em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold);
+    }
+
+    .gold-rule {
+      display: block;
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      margin: 2rem 0;
+    }
+    .gold-rule--center { margin-left: auto; margin-right: auto; }
+
+    /* ============================================================
+       SCROLL REVEAL
+    ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal--d1 { transition-delay: 0.08s; }
+    .reveal--d2 { transition-delay: 0.18s; }
+    .reveal--d3 { transition-delay: 0.28s; }
+    .reveal--d4 { transition-delay: 0.38s; }
+    .reveal--d5 { transition-delay: 0.48s; }
+    .reveal--from-left {
+      transform: translateX(-28px) translateY(0);
+    }
+    .reveal--from-left.is-revealed {
+      transform: translateX(0);
+    }
+
+    /* ============================================================
+       GRAIN TEXTURE (cream sections)
+    ============================================================ */
+    .grain {
+      position: relative;
+    }
+    .grain::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px;
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 0;
     }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -2px; left: 0; right: 0;
-      height: 80px;
-      background: linear-gradient(to top, var(--white), transparent);
+    .grain > * { position: relative; z-index: 1; }
+
+    /* ============================================================
+       ABOUT SECTION
+    ============================================================ */
+    .about {
+      padding: 10rem 3.5rem;
+      background: var(--ivory);
     }
-    .hero__inner {
-      position: relative;
-      z-index: 1;
+    .about__inner {
+      max-width: 1220px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 64px;
+      gap: 7rem;
       align-items: center;
     }
-    .hero__badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 16px;
-      border-radius: 100px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.18);
-      color: rgba(255,255,255,.9);
-      font-size: .8125rem;
-      font-weight: 500;
-      margin-bottom: 20px;
-      backdrop-filter: blur(6px);
+    .about__body {
+      font-size: 0.88rem;
+      color: var(--warm-600);
+      line-height: 1.95;
+      margin-bottom: 1.4rem;
     }
-    .hero__badge-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #4ADE80;
-      flex-shrink: 0;
+    .about__quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.2vw, 2rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.45;
+      color: var(--charcoal);
+      margin: 1.8rem 0 2.2rem;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--gold-light);
     }
-    .hero__title { color: var(--white); margin-bottom: 20px; }
-    .hero__title span { color: #60A5FA; }
-    .hero__lead {
-      color: rgba(255,255,255,.75);
-      margin-bottom: 36px;
-      max-width: 480px;
-    }
-    .hero__actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 48px;
-    }
-    .hero__trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .hero__trust-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,.7);
-      font-size: .875rem;
-    }
-    .hero__trust-item strong { color: var(--white); }
-    .hero__trust-icon {
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.10);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-
-    /* Hero visual */
-    .hero__visual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    .hero__device-card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: var(--radius-xl);
-      padding: 28px;
-      backdrop-filter: blur(12px);
-      width: 100%;
-      max-width: 380px;
-    }
-    .hero__device-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .hero__device-icon {
-      width: 44px; height: 44px;
-      border-radius: 12px;
-      background: var(--brand);
-      display: flex; align-items: center; justify-content: center;
-    }
-    .hero__device-title { font-weight: 700; font-size: 1rem; }
-    .hero__device-sub { font-size: .8125rem; color: rgba(255,255,255,.55); margin-top: 2px; }
-    .hero__stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .hero__stat {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius-md);
-      padding: 16px;
-      text-align: center;
-    }
-    .hero__stat-value {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--white);
-    }
-    .hero__stat-label {
-      font-size: .75rem;
-      color: rgba(255,255,255,.5);
-      margin-top: 2px;
-    }
-    .hero__stat-value.accent { color: #4ADE80; }
-
-    /* Stars */
-    .stars { display: flex; gap: 2px; }
-    .star { color: #FBBF24; font-size: .875rem; }
-
-    /* ============================================================
-       SERVICES
-    ============================================================ */
-    .services { background: var(--surface); }
-    .service-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1.5px solid var(--border);
-      padding: 32px;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--brand-dark), var(--brand-light));
-      opacity: 0;
-      transition: opacity .22s;
-    }
-    .service-card:hover::before { opacity: 1; }
-    .service-card:hover {
-      border-color: rgba(29,78,216,.18);
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-    }
-    .service-card__icon {
-      width: 52px; height: 52px;
-      border-radius: var(--radius-md);
-      background: rgba(29,78,216,.08);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px;
-      transition: var(--transition);
-    }
-    .service-card:hover .service-card__icon {
-      background: var(--brand);
-    }
-    .service-card:hover .service-card__icon svg { color: var(--white); }
-    .service-card__icon svg { color: var(--brand); transition: color .22s; }
-    .service-card__title { margin-bottom: 10px; }
-    .service-card__desc { color: var(--muted); font-size: .9375rem; margin-bottom: 20px; line-height: 1.65; }
-    .service-card__list { display: flex; flex-direction: column; gap: 6px; }
-    .service-card__list-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: .875rem;
-      color: var(--muted);
-    }
-    .service-card__list-item::before {
-      content: '';
-      width: 5px; height: 5px;
-      border-radius: 50%;
-      background: var(--brand-light);
-      flex-shrink: 0;
-    }
-    .service-card__badge {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 5px 12px;
-      border-radius: 100px;
-      background: rgba(249,115,22,.08);
-      color: var(--accent);
-      font-size: .8rem;
-      font-weight: 600;
-    }
-
-    /* ============================================================
-       WHY US
-    ============================================================ */
-    .features__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .feature {
-      padding: 28px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      background: var(--white);
-      transition: var(--transition);
-    }
-    .feature:hover {
-      border-color: rgba(29,78,216,.2);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-    .feature__icon {
-      width: 48px; height: 48px;
-      border-radius: var(--radius-md);
-      background: linear-gradient(135deg, var(--brand), var(--brand-light));
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 16px;
-      flex-shrink: 0;
-    }
-    .feature__icon svg { color: var(--white); }
-    .feature__title { margin-bottom: 8px; font-size: 1rem; font-weight: 700; }
-    .feature__desc { font-size: .9rem; color: var(--muted); line-height: 1.6; }
-
-    /* ============================================================
-       PROCESS
-    ============================================================ */
-    .process { background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%); color: var(--white); }
-    .process .section-tag { background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); }
-    .process .section-header p { color: rgba(255,255,255,.6); }
-    .process__steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      position: relative;
-    }
-    .process__steps::before {
-      content: '';
-      position: absolute;
-      top: 32px;
-      left: calc(12.5% + 16px);
-      right: calc(12.5% + 16px);
-      height: 1px;
-      background: rgba(255,255,255,.12);
-    }
-    .process__step {
-      padding: 0 16px;
-      text-align: center;
-      position: relative;
-    }
-    .process__step-num {
-      width: 64px; height: 64px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.08);
-      border: 1.5px solid rgba(255,255,255,.15);
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 20px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.375rem;
-      font-weight: 800;
-      color: var(--white);
-      position: relative;
-      z-index: 1;
-      transition: var(--transition);
-    }
-    .process__step:hover .process__step-num {
-      background: var(--brand-light);
-      border-color: var(--brand-light);
-    }
-    .process__step-title {
-      font-weight: 700;
-      margin-bottom: 8px;
-      font-size: 1rem;
-    }
-    .process__step-desc {
-      font-size: .875rem;
-      color: rgba(255,255,255,.55);
-      line-height: 1.6;
-    }
-
-    /* ============================================================
-       SECURITY
-    ============================================================ */
-    .security { background: var(--surface); }
-    .security__inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-    .security__visual {
-      border-radius: var(--radius-xl);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    model-viewer#securityModel {
+    .about__signature {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--gold);
       display: block;
-      width: 340px;
-      height: 340px;
-      border-radius: var(--radius-xl);
-      background: transparent;
-      --progress-bar-color: transparent;
-      --poster-color: transparent;
+      margin-top: 0.5rem;
     }
-    .security__shield {
-      width: 120px; height: 120px;
-      background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 0 60px rgba(29,78,216,.25);
+    .about__visual {
+      position: relative;
     }
-    .security__points { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
-    .security__point {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .security__point-icon {
-      width: 36px; height: 36px;
-      border-radius: var(--radius-sm);
-      background: rgba(29,78,216,.08);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .security__point-icon svg { color: var(--brand); }
-    .security__point h4 { font-size: .9375rem; font-weight: 600; margin-bottom: 4px; }
-    .security__point p { font-size: .875rem; color: var(--muted); line-height: 1.6; }
-
-    /* ============================================================
-       REVIEWS
-    ============================================================ */
-    .reviews__header-meta {
+    .about__frame {
+      background: var(--cream);
+      aspect-ratio: 3/4;
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-top: 10px;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
     }
-    .reviews__score {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      color: var(--brand-dark);
+    .about__frame::before {
+      content: '';
+      position: absolute;
+      inset: 1.8rem;
+      border: 1px solid var(--gold-light);
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0.6;
+    }
+    .about__ornament {
+      font-family: var(--font-display);
+      font-size: 12rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      opacity: 0.22;
+      user-select: none;
       line-height: 1;
     }
-    .reviews__score-detail { display: flex; flex-direction: column; gap: 4px; }
-    .reviews__count { font-size: .875rem; color: var(--muted); }
-    .reviews__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+    .about__badge {
+      position: absolute;
+      bottom: -1.8rem;
+      right: -1.8rem;
+      background: var(--charcoal);
+      color: #fff;
+      padding: 1.8rem 2.2rem;
+      text-align: center;
+      min-width: 140px;
+      z-index: 3;
     }
-    .review-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      border: 1.5px solid var(--border);
-      padding: 28px;
-      transition: var(--transition);
+    .about__badge-num {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: var(--gold);
+      display: block;
+      line-height: 1;
     }
-    .review-card:hover {
-      border-color: rgba(29,78,216,.15);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-    .review-card__header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .review-card__avatar {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--brand), var(--brand-light));
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700;
-      color: var(--white);
-      font-size: .875rem;
-      flex-shrink: 0;
-    }
-    .review-card__name { font-weight: 600; font-size: .9375rem; }
-    .review-card__date { font-size: .8rem; color: var(--muted); margin-top: 2px; }
-    .review-card__stars { margin-bottom: 12px; }
-    .review-card__text { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-    .review-card__service {
-      margin-top: 16px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      font-size: .8rem;
-      color: var(--brand);
-      font-weight: 500;
+    .about__badge-text {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--warm-400);
+      display: block;
+      margin-top: 0.4rem;
     }
 
     /* ============================================================
-       FAQ
+       COLLECTION SECTION
     ============================================================ */
-    .faq { background: var(--surface); }
-    .faq__list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
-    .faq__item {
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
+    .collection {
+      padding: 10rem 3.5rem;
+      background: var(--cream);
     }
-    .faq__item:first-child { border-top: 1px solid var(--border); }
-    .faq__question {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 22px 4px;
-      cursor: pointer;
-      background: transparent;
-      width: 100%;
-      text-align: left;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-      transition: color .2s;
+    .collection__inner {
+      max-width: 1220px;
+      margin: 0 auto;
     }
-    .faq__question:hover { color: var(--brand); }
-    .faq__icon {
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      background: var(--surface-2);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      transition: var(--transition);
+    .collection__header {
+      text-align: center;
+      margin-bottom: 5rem;
     }
-    .faq__icon svg { color: var(--muted); transition: transform .3s; }
-    .faq__item.is-open .faq__icon { background: var(--brand); }
-    .faq__item.is-open .faq__icon svg { color: var(--white); transform: rotate(45deg); }
-    .faq__answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s cubic-bezier(0,1,0,1);
+    .collection__header .section-heading {
+      max-width: 520px;
+      margin: 0 auto;
     }
-    .faq__item.is-open .faq__answer {
-      max-height: 500px;
-      transition: max-height .45s cubic-bezier(.1,0,.25,1);
-    }
-    .faq__answer-inner {
-      padding: 0 4px 22px;
-      font-size: .9375rem;
-      color: var(--muted);
-      line-height: 1.7;
+    .collection__lead {
+      font-size: 0.88rem;
+      color: var(--warm-600);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.9;
     }
 
-    /* ============================================================
-       CONTACT / CTA
-    ============================================================ */
-    .contact {
-      background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
-      color: var(--white);
-      padding: 88px 0;
-    }
-    .contact__inner {
+    .collection__grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 64px;
+      gap: 3px;
+    }
+
+    .coll-card {
+      position: relative;
+      background: var(--charcoal);
+      aspect-ratio: 5/6;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .coll-card__bg {
+      position: absolute;
+      inset: 0;
+      transition: transform 0.8s var(--ease);
+    }
+    .coll-card:hover .coll-card__bg {
+      transform: scale(1.05);
+    }
+    .coll-card--a .coll-card__bg {
+      background: linear-gradient(148deg, #2A2318 0%, #0D0A06 100%);
+    }
+    .coll-card--b .coll-card__bg {
+      background: linear-gradient(148deg, #1E1C18 0%, #080706 100%);
+    }
+    .coll-card__glyph {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -60%);
+      font-family: var(--font-display);
+      font-size: 9rem;
+      font-weight: 300;
+      color: rgba(200,160,92,0.09);
+      line-height: 1;
+      pointer-events: none;
+      transition: transform 0.8s var(--ease), color 0.6s;
+      user-select: none;
+    }
+    .coll-card:hover .coll-card__glyph {
+      transform: translate(-50%, -60%) scale(1.1);
+      color: rgba(200,160,92,0.15);
+    }
+    .coll-card__content {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 2.8rem;
+      background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.4) 55%, transparent 100%);
+      z-index: 2;
+    }
+    .coll-card__karat {
+      font-family: var(--font-display);
+      font-size: 3.4rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+    .coll-card__name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: #fff;
+      display: block;
+      margin-top: 0.25rem;
+      letter-spacing: 0.03em;
+    }
+    .coll-card__desc {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.8;
+      margin-top: 0.9rem;
+      max-width: 300px;
+    }
+    .coll-card__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-top: 1.6rem;
+      transition: gap 0.3s var(--ease), color 0.3s;
+    }
+    .coll-card:hover .coll-card__cta {
+      gap: 0.8rem;
+      color: var(--gold);
+    }
+    .coll-card__cta::after { content: '→'; font-size: 1rem; }
+
+    /* Features */
+    .collection__features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      margin-top: 5.5rem;
+      padding-top: 4.5rem;
+      border-top: 1px solid var(--cream-deep);
+    }
+    .feature {
+      text-align: center;
+    }
+    .feature__icon {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 1.4rem;
+      opacity: 0.85;
+    }
+    .feature__title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--charcoal);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+    .feature__text {
+      font-size: 0.8rem;
+      color: var(--warm-600);
+      line-height: 1.9;
+    }
+
+    /* ============================================================
+       QUOTE / STATEMENT SECTION
+    ============================================================ */
+    .statement {
+      padding: 9rem 3.5rem;
+      background: var(--charcoal);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .statement::before {
+      content: '✦';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18rem;
+      color: rgba(200,160,92,0.04);
+      pointer-events: none;
+      font-family: serif;
+      line-height: 1;
+    }
+    .statement__inner {
+      position: relative;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .statement__openquote {
+      font-family: var(--font-display);
+      font-size: 6rem;
+      line-height: 0.4;
+      color: var(--gold);
+      opacity: 0.5;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    .statement__quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.45;
+      letter-spacing: 0.015em;
+    }
+    .statement__tr {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.32);
+      margin-top: 1.8rem;
+      line-height: 1.6;
+    }
+    .statement__rule {
+      display: block;
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      margin: 3.5rem auto 0;
+    }
+
+    /* ============================================================
+       CONTACT & HOURS SECTION
+    ============================================================ */
+    .contact {
+      padding: 10rem 3.5rem;
+      background: var(--ivory);
+    }
+    .contact__inner {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
       align-items: start;
     }
-    .contact .section-tag { background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); }
-    .contact__title { color: var(--white); margin-bottom: 12px; }
-    .contact__lead { color: rgba(255,255,255,.65); margin-bottom: 36px; }
-    .contact__info { display: flex; flex-direction: column; gap: 20px; }
-    .contact__info-item {
+
+    .contact-item {
       display: flex;
       align-items: flex-start;
-      gap: 16px;
+      gap: 1.3rem;
+      padding-bottom: 1.8rem;
+      margin-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border-solid);
     }
-    .contact__info-icon {
-      width: 44px; height: 44px;
-      border-radius: var(--radius-md);
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.10);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .contact__info-icon svg { color: rgba(255,255,255,.7); }
-    .contact__info-label {
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.45);
-      margin-bottom: 4px;
-    }
-    .contact__info-value {
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--white);
-    }
-    .contact__info-value a { color: var(--white); transition: color .2s; }
-    .contact__info-value a:hover { color: #60A5FA; }
+    .contact-item:last-of-type { border-bottom: none; }
 
-    /* Right column */
-    .contact__card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: var(--radius-xl);
-      padding: 36px;
-      backdrop-filter: blur(8px);
+    .contact-item__icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.3s, border-color 0.3s;
     }
-    .contact__hours-title {
-      font-weight: 700;
-      margin-bottom: 16px;
-      font-size: 1rem;
+    .contact-item:hover .contact-item__icon {
+      background: var(--gold);
+      border-color: var(--gold);
     }
-    .contact__hours-row {
+    .contact-item__icon svg {
+      width: 15px; height: 15px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.3s;
+    }
+    .contact-item:hover .contact-item__icon svg { stroke: #fff; }
+    .contact-item__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: var(--warm-400);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .contact-item__value {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      display: block;
+      transition: color 0.3s;
+    }
+    .contact-item__value:hover { color: var(--gold); }
+    .contact-item__sub {
+      font-size: 0.78rem;
+      color: var(--warm-400);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    /* Hours panel */
+    .hours-panel {
+      background: var(--cream);
+      padding: 3.2rem 3.2rem 3rem;
+    }
+    .hours-panel__title {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      font-weight: 300;
+      color: var(--charcoal);
+    }
+    .hours-panel__subtitle {
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--warm-400);
+      display: block;
+      margin-top: 0.3rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .hours-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      font-size: .9375rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(221,212,196,0.6);
+      font-size: 0.84rem;
     }
-    .contact__hours-row:last-of-type { border: none; }
-    .contact__hours-day { color: rgba(255,255,255,.6); }
-    .contact__hours-time { font-weight: 600; color: var(--white); }
-    .contact__cta-wrap {
-      margin-top: 28px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row__day { color: var(--warm-800); font-weight: 300; }
+    .hours-row__time { color: var(--charcoal); font-weight: 400; }
+    .hours-row--closed .hours-row__time { color: var(--warm-400); font-style: italic; }
+    .hours-row--today .hours-row__day {
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .hours-row--today .hours-row__time { color: var(--gold); }
+
+    .hours-panel__today-tag {
+      display: inline-block;
+      font-size: 0.5rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: var(--gold);
+      color: #fff;
+      padding: 0.15rem 0.5rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .hours-panel__note {
+      font-size: 0.76rem;
+      color: var(--warm-400);
+      line-height: 1.8;
+      margin-top: 1.8rem;
+      border-top: 1px solid var(--border-solid);
+      padding-top: 1.5rem;
     }
 
     /* ============================================================
        FOOTER
     ============================================================ */
     .footer {
-      background: var(--dark);
-      color: rgba(255,255,255,.5);
-      padding: 40px 0;
+      background: var(--charcoal);
+      padding: 6rem 3.5rem 3.5rem;
     }
     .footer__inner {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+    .footer__top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 4.5rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .footer__brand-name {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: #fff;
+      display: block;
+    }
+    .footer__brand-tagline {
+      font-size: 0.6rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-top: 0.3rem;
+    }
+    .footer__brand-desc {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.38);
+      line-height: 1.9;
+      margin-top: 1.4rem;
+      max-width: 270px;
+    }
+    .footer__col-title {
+      font-size: 0.58rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 1.6rem;
+    }
+    .footer__links {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
+      flex-direction: column;
+      gap: 0.75rem;
     }
-    .footer__logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 800;
-      font-size: 1.125rem;
-      color: var(--white);
-    }
-    .footer__logo-icon {
-      width: 32px; height: 32px;
-      background: var(--brand);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .footer__links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
     .footer__links a {
-      font-size: .875rem;
-      color: rgba(255,255,255,.45);
-      transition: color .2s;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.46);
+      transition: color 0.3s, padding-left 0.3s var(--ease);
     }
-    .footer__links a:hover { color: var(--white); }
-    .footer__copy { font-size: .8125rem; }
+    .footer__links a:hover {
+      color: var(--gold-light);
+      padding-left: 0.3rem;
+    }
+    .footer__contact-line {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.46);
+      display: block;
+      margin-bottom: 0.6rem;
+      transition: color 0.3s;
+    }
+    .footer__contact-line a { color: inherit; transition: color 0.3s; }
+    .footer__contact-line a:hover { color: var(--gold-light); }
+    .footer__hours-list {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.46);
+    }
+    .footer__hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2.5rem;
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.24);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer__legal {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer__legal a {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .footer__legal a:hover { color: rgba(255,255,255,0.6); }
 
     /* ============================================================
-       SCROLL ANIMATIONS
+       KEYFRAME ANIMATIONS
     ============================================================ */
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity .55s cubic-bezier(.4,0,.2,1), transform .55s cubic-bezier(.4,0,.2,1);
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-    [data-animate].is-visible {
-      opacity: 1;
-      transform: none;
+    @keyframes heroFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
     }
-    [data-animate-delay="1"] { transition-delay: .08s; }
-    [data-animate-delay="2"] { transition-delay: .16s; }
-    [data-animate-delay="3"] { transition-delay: .24s; }
-    [data-animate-delay="4"] { transition-delay: .32s; }
-    [data-animate-delay="5"] { transition-delay: .40s; }
-    [data-animate-delay="6"] { transition-delay: .48s; }
-
-    /* ============================================================
-       UTILITY
-    ============================================================ */
-    .text-brand { color: var(--brand); }
-    .text-accent { color: var(--accent); }
-    .text-muted { color: var(--muted); }
-    .text-white { color: var(--white); }
-    .text-center { text-align: center; }
-    .mt-4 { margin-top: 4px; }
-    .mt-8 { margin-top: 8px; }
-    .mt-16 { margin-top: 16px; }
-    .mt-24 { margin-top: 24px; }
+    @keyframes scrollDrop {
+      0%   { top: -100%; opacity: 0; }
+      20%  { opacity: 1; }
+      80%  { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
 
     /* ============================================================
        RESPONSIVE
     ============================================================ */
-    @media (max-width: 1023px) {
-      .hero__inner { grid-template-columns: 1fr; gap: 48px; }
-      .hero__visual { display: none; }
-      .features__grid { grid-template-columns: repeat(2, 1fr); }
-      .process__steps { grid-template-columns: repeat(2, 1fr); }
-      .process__steps::before { display: none; }
-      .process__step { padding: 0 0; margin-bottom: 32px; text-align: left; }
-      .process__step-num { margin: 0 0 16px; }
-      .security__inner { grid-template-columns: 1fr; }
-      .security__visual { display: none; }
-      .reviews__grid { grid-template-columns: 1fr; }
-      .contact__inner { grid-template-columns: 1fr; gap: 40px; }
+    @media (max-width: 1100px) {
+      .about__inner { gap: 4.5rem; }
+      .contact__inner { gap: 4.5rem; }
+      .footer__top { grid-template-columns: 1fr 1fr; gap: 3rem; }
+      .collection__features { grid-template-columns: 1fr 1fr; gap: 3rem; }
     }
-    @media (max-width: 767px) {
-      .section { padding: 64px 0; }
-      .section-header { margin-bottom: 36px; }
-      .nav__links { display: none; }
+
+    @media (max-width: 900px) {
+      .about__inner { grid-template-columns: 1fr; }
+      .about__visual { display: none; }
+      .contact__inner { grid-template-columns: 1fr; gap: 3.5rem; }
+    }
+
+    @media (max-width: 768px) {
+      .nav { padding: 1.3rem 1.8rem; }
+      .nav.is-scrolled { padding: 0.9rem 1.8rem; }
+      .nav__links, .nav__phone { display: none; }
       .nav__hamburger { display: flex; }
-      .hero { padding: 120px 0 80px; }
-      .hero__actions { flex-direction: column; }
-      .hero__trust { gap: 14px; }
-      .grid-2, .grid-3, .grid-4, .features__grid { grid-template-columns: 1fr; }
-      .process__steps { grid-template-columns: 1fr; }
-      .footer__inner { flex-direction: column; align-items: flex-start; }
+
+      .hero__headline { font-size: clamp(3rem, 12vw, 4.5rem); }
+
+      .hero__rizz { display: none !important; }
+      .hero__content { padding-top: 18vh; justify-content: flex-start; }
+      .hero__zui {
+        display: block;
+        height: 70px;
+        width: auto;
+        object-fit: contain;
+        margin-bottom: -14px;
+        opacity: 0;
+        animation: zuiFadeIn 1.2s var(--ease) 1s forwards;
+      }
+      .hero__logo { height: 120px; }
+
+      .about { padding: 6rem 1.8rem; }
+      .collection { padding: 6rem 1.8rem; }
+      .statement { padding: 6rem 1.8rem; }
+      .contact { padding: 6rem 1.8rem; }
+
+      .collection__grid { grid-template-columns: 1fr; }
+      .coll-card { aspect-ratio: 4/5; }
+      .collection__features { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      .footer { padding: 5rem 1.8rem 3rem; }
+      .footer__top { grid-template-columns: 1fr; gap: 2.8rem; }
+      .footer__bottom { flex-direction: column; text-align: center; }
     }
+
     @media (max-width: 480px) {
-      .container { padding: 0 16px; }
-      .hero__trust { flex-direction: column; gap: 10px; }
+      .hero__actions { flex-direction: column; width: 100%; max-width: 240px; }
+      .btn { justify-content: center; }
+      .hours-panel { padding: 2.2rem; }
+      .hero__content { padding-top: 15vh; }
+      .hero__zui { height: 56px; margin-bottom: -10px; }
+      .hero__logo { height: 96px; }
     }
   </style>
 </head>
@@ -1002,968 +1200,1021 @@
   <!-- ============================================================
        NAVIGATION
   ============================================================ -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="#hero" class="nav__logo" aria-label="RepairStation Startseite">
-          <div class="nav__logo-icon" aria-hidden="true">
-            <img src="superr.png" alt="" width="82" height="82" style="object-fit:contain; display:block;">
-          </div>
-          RepairStation
-        </a>
-        <ul class="nav__links" role="list">
-          <li><a href="#services" class="nav__link">Leistungen</a></li>
-          <li><a href="#warum" class="nav__link">Warum wir</a></li>
-          <li><a href="#ablauf" class="nav__link">Ablauf</a></li>
-          <li><a href="#bewertungen" class="nav__link">Bewertungen</a></li>
-          <li><a href="#faq" class="nav__link">FAQ</a></li>
-          <li><a href="#kontakt" class="nav__link nav__cta">Jetzt anrufen</a></li>
-        </ul>
-        <button class="nav__hamburger" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Hauptnavigation">
+    <a href="#" class="nav__wordmark" aria-label="Juwelier Roza – Startseite">Juwelier Roza</a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#ueber-uns">Über Uns</a></li>
+      <li><a href="#kollektion">Kollektion</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
+    </ul>
+
+    <a href="tel:+4961173419779" class="nav__phone">0611 73419779</a>
+
+    <button class="nav__hamburger" id="navHamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobiles Menü" aria-hidden="true">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Menü schließen">✕</button>
+    <a href="#ueber-uns"       class="mobile-menu__link">Über Uns</a>
+    <a href="#kollektion"      class="mobile-menu__link">Kollektion</a>
+    <a href="#kontakt"         class="mobile-menu__link">Kontakt</a>
+    <a href="#oeffnungszeiten" class="mobile-menu__link">Öffnungszeiten</a>
+    <div class="mobile-menu__contact">
+      <p>Wellritzstraße 29 · 65183 Wiesbaden</p>
+      <p style="margin-top:0.7rem">
+        <a href="tel:+4961173419779">0611 73419779</a>
+      </p>
+      <p style="margin-top:0.4rem">
+        <a href="https://oromark.de" target="_blank" rel="noopener">oromark.de</a>
+      </p>
     </div>
   </nav>
 
-  <!-- Mobile Navigation -->
-  <div class="nav__mobile" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobilmenü">
-    <button class="nav__mobile-close" id="menuClose" aria-label="Menü schließen">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <a href="#services" class="mobile-link">Leistungen</a>
-    <a href="#warum" class="mobile-link">Warum wir</a>
-    <a href="#ablauf" class="mobile-link">Ablauf</a>
-    <a href="#bewertungen" class="mobile-link">Bewertungen</a>
-    <a href="#faq" class="mobile-link">FAQ</a>
-    <a href="#kontakt" class="mobile-link" style="color:#60A5FA;">📞 0611 – 58589987</a>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero – Juwelier Roza">
+
+    <!-- Seamless loop – single video, requestVideoFrameCallback -->
+    <div class="hero__video-wrap" aria-hidden="true">
+      <video class="hero__video" id="heroVidA"
+        autoplay muted playsinline preload="auto">
+        <source src="uizu.mp4"  type="video/mp4">
+        <source src="uizu.webm" type="video/webm">
+      </video>
+    </div>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__grain"   aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <!-- HUIP animation (Desktop only) -->
+      <div class="hero__rizz" id="rizzWrap" aria-hidden="true"></div>
+
+      <!-- ZUI (Mobile only, ersetzt Animation) -->
+      <img src="zui.png" alt="" class="hero__zui" aria-hidden="true">
+
+      <!-- Logo -->
+      <img
+        id="heroLogo"
+        src="Bilder/piner.png"
+        alt="Juwelier Roza"
+        class="hero__logo"
+        onerror="this.removeAttribute('onerror'); this.src='Bilder/piner.svg';"
+      >
+
+      <p class="hero__eyebrow">Wiesbaden · Goldschmuck</p>
+
+      <h1 class="hero__headline">
+        Zeitloser<br><em>Glanz</em>
+      </h1>
+
+      <div class="hero__rule" aria-hidden="true"></div>
+
+      <p class="hero__sub">
+        Exklusiver Goldschmuck in 14 &amp; 22 Karat —<br>
+        für Menschen, die das Besondere suchen.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#kollektion" class="btn btn--gold">Kollektion entdecken</a>
+        <a href="#kontakt"    class="btn btn--ghost-white">Uns besuchen</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Entdecken</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       GOLDENE RANKEN-SZENE
+  ════════════════════════════════════════════════════════════ -->
+  <div class="vine-scene" id="vineScene" aria-hidden="true">
+    <canvas id="vineCanvas"></canvas>
   </div>
 
-  <main>
 
-    <!-- ============================================================
-         HERO
-    ============================================================ -->
-    <section class="hero" id="hero" aria-label="Willkommen bei RepairStation">
-      <div class="container">
-        <div class="hero__inner">
-          <div class="hero__content">
-            <div class="hero__badge" aria-label="Aktuell geöffnet">
-              <span class="hero__badge-dot" aria-hidden="true"></span>
-              Ihre Reparaturwerkstatt in Wiesbaden
-            </div>
-            <h1 class="h-display hero__title">
-              Ihr Gerät defekt?<br>
-              <span>Wir reparieren es.</span><br>
-              Schnell &amp; fair.
-            </h1>
-            <p class="lead hero__lead">
-              RepairStation ist Ihre freie und unabhängige Werkstatt für Smartphone, Laptop und MacBook-Reparatur in Wiesbaden — mit fairen Festpreisen und erfahrenen Technikern.
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about" id="ueber-uns" aria-labelledby="about-heading">
+    <div class="about__inner">
+
+      <div>
+        <span class="section-label reveal">Über Uns</span>
+        <h2 class="section-heading reveal reveal--d1" id="about-heading">
+          Qualität, die<br>man <em>fühlt.</em>
+        </h2>
+        <span class="gold-rule reveal reveal--d2"></span>
+
+        <blockquote class="about__quote reveal reveal--d2">
+          „Für unsere anspruchsvollen Kundinnen und Kunden — sorgfältig ausgewählte Schmuckstücke aus 22 und 14 Karat Gold."
+        </blockquote>
+
+        <p class="about__body reveal reveal--d3">
+          Bei Juwelier Roza in Wiesbaden steht jedes Stück für höchste handwerkliche Güte und zeitlose Eleganz. Unsere kuratierte Kollektion verbindet türkische Goldschmiedetradition mit modernem Empfinden — für Momente, die in Erinnerung bleiben.
+        </p>
+        <p class="about__body reveal reveal--d3">
+          Wir beraten Sie persönlich, nehmen uns die Zeit, die Ihnen gebührt, und finden gemeinsam das Schmuckstück, das wirklich zu Ihnen gehört. Denn Goldschmuck ist keine Entscheidung für den Moment — er ist eine Entscheidung für die Ewigkeit.
+        </p>
+
+        <span class="about__signature reveal reveal--d4">— Juwelier Roza, Wiesbaden</span>
+
+        <div style="margin-top:2.4rem" class="reveal reveal--d4">
+          <a href="#kontakt" class="btn btn--outline">Besuchen Sie uns</a>
+        </div>
+      </div>
+
+      <div class="about__visual reveal reveal--d2">
+        <div class="about__frame">
+          <span class="about__ornament" aria-hidden="true">✦</span>
+        </div>
+        <div class="about__badge">
+          <span class="about__badge-num">14 &amp; 22</span>
+          <span class="about__badge-text">Karat Gold</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COLLECTION SECTION
+  ============================================================ -->
+  <section class="collection grain" id="kollektion" aria-labelledby="collection-heading">
+    <div class="collection__inner">
+
+      <div class="collection__header">
+        <span class="section-label reveal">Unsere Kollektion</span>
+        <h2 class="section-heading reveal reveal--d1" id="collection-heading">
+          Gold in seiner<br><em>reinsten Form.</em>
+        </h2>
+        <span class="gold-rule gold-rule--center reveal reveal--d2"></span>
+        <p class="collection__lead reveal reveal--d2">
+          Zwei Reinheitsgrade. Eine Philosophie. Jedes Schmuckstück entsteht mit Sorgfalt und dem Anspruch auf Zeitlosigkeit.
+        </p>
+      </div>
+
+      <div class="collection__grid">
+        <!-- 22 Karat -->
+        <article class="coll-card coll-card--a reveal" aria-label="22 Karat Gold – Höchste Reinheit">
+          <div class="coll-card__bg"></div>
+          <span class="coll-card__glyph" aria-hidden="true">✦</span>
+          <div class="coll-card__content">
+            <span class="coll-card__karat">22K</span>
+            <span class="coll-card__name">Höchste Reinheit</span>
+            <p class="coll-card__desc">
+              22 Karat Gold steht für unvergleichliche Strahlkraft und das tiefe, warme Goldgelb türkischer Schmiedekunst. Ein Statement für die Ewigkeit.
             </p>
-            <div class="hero__actions">
-              <a href="tel:+4961158589987" class="btn btn--primary btn--lg" aria-label="RepairStation anrufen">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
-                0611 – 58589987
-              </a>
-              <a href="#services" class="btn btn--secondary btn--lg">
-                Leistungen entdecken
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-            <div class="hero__trust" role="list">
-              <div class="hero__trust-item" role="listitem">
-                <div class="hero__trust-icon" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <span><strong>4,9 / 5</strong> Sterne auf Google</span>
-              </div>
-              <div class="hero__trust-item" role="listitem">
-                <div class="hero__trust-icon" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <span>Oft <strong>noch am selben Tag</strong> fertig</span>
-              </div>
-              <div class="hero__trust-item" role="listitem">
-                <div class="hero__trust-icon" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <span><strong>Keine</strong> versteckten Kosten</span>
-              </div>
-            </div>
+            <span class="coll-card__cta">Kollektion entdecken</span>
           </div>
+        </article>
 
-          <div class="hero__visual" aria-hidden="true">
-            <div class="hero__device-card">
-              <div class="hero__device-header">
-                <div class="hero__device-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-                </div>
-                <div>
-                  <div class="hero__device-title">Reparatur-Diagnose</div>
-                  <div class="hero__device-sub">RepairStation Wiesbaden</div>
-                </div>
-              </div>
-              <div class="hero__stat-grid">
-                <div class="hero__stat">
-                  <div class="hero__stat-value">182+</div>
-                  <div class="hero__stat-label">Google Bewertungen</div>
-                </div>
-                <div class="hero__stat">
-                  <div class="hero__stat-value accent">4,9★</div>
-                  <div class="hero__stat-label">Durchschnitt</div>
-                </div>
-                <div class="hero__stat">
-                  <div class="hero__stat-value">1 Tag</div>
-                  <div class="hero__stat-label">Ø Reparaturzeit</div>
-                </div>
-                <div class="hero__stat">
-                  <div class="hero__stat-value">0€</div>
-                  <div class="hero__stat-label">Versteckte Kosten</div>
-                </div>
-              </div>
-            </div>
+        <!-- 14 Karat -->
+        <article class="coll-card coll-card--b reveal reveal--d2" aria-label="14 Karat Gold – Vielseitige Eleganz">
+          <div class="coll-card__bg"></div>
+          <span class="coll-card__glyph" aria-hidden="true">◈</span>
+          <div class="coll-card__content">
+            <span class="coll-card__karat">14K</span>
+            <span class="coll-card__name">Vielseitige Eleganz</span>
+            <p class="coll-card__desc">
+              14 Karat Gold vereint Langlebigkeit mit feinem Glanz. Perfekt für den täglichen Begleiter — robust, edel und zeitgemäß in jedem Moment.
+            </p>
+            <span class="coll-card__cta">Kollektion entdecken</span>
           </div>
+        </article>
+      </div>
+
+      <!-- Three pillars -->
+      <div class="collection__features">
+        <div class="feature reveal">
+          <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6L29.18 18H42L32.09 25.64L36.18 38L24 30.36L11.82 38L15.91 25.64L6 18H18.82L24 6Z"/>
+          </svg>
+          <span class="feature__title">Zertifizierte Qualität</span>
+          <p class="feature__text">Jedes Schmuckstück wird auf Echtheit und Karat-Reinheit geprüft — für Ihre vollständige Sicherheit und Ihr Vertrauen.</p>
+        </div>
+        <div class="feature reveal reveal--d2">
+          <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="16" r="9"/>
+            <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18"/>
+          </svg>
+          <span class="feature__title">Persönliche Beratung</span>
+          <p class="feature__text">Wir nehmen uns die Zeit, die Ihnen gehört. Unser erfahrenes Team begleitet Sie auf dem Weg zu Ihrem perfekten Stück.</p>
+        </div>
+        <div class="feature reveal reveal--d3">
+          <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 4L26.5 16H38L28.5 23L32 36L24 29L16 36L19.5 23L10 16H21.5L24 4Z"/>
+            <circle cx="24" cy="24" r="5"/>
+          </svg>
+          <span class="feature__title">Türkische Tradition</span>
+          <p class="feature__text">Jahrhundertelange Goldschmiedekunst aus der Türkei trifft auf zeitgemäßes Design — handverlesen, mit Herz und Expertise.</p>
         </div>
       </div>
-    </section>
 
-    <!-- ============================================================
-         SERVICES
-    ============================================================ -->
-    <section class="section services" id="services" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-header section-header--center" data-animate>
-          <span class="section-tag" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            Unsere Leistungen
-          </span>
-          <h2 class="h1" id="services-heading">Wir reparieren Ihre Geräte —<br>professionell &amp; zuverlässig</h2>
-          <p class="lead">Von Smartphone über Laptop bis MacBook — unsere erfahrenen Techniker beheben nahezu alle Defekte schnell und zu fairen Preisen.</p>
-        </div>
+    </div>
+  </section>
 
-        <div class="grid-2" style="gap:24px;">
 
-          <!-- Smartphone -->
-          <article class="service-card" data-animate data-animate-delay="1">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <h3 class="h3 service-card__title">Smartphone Reparatur</h3>
-            <p class="service-card__desc">Ob iPhone, Huawei oder Samsung — wir reparieren alle gängigen Smartphones professionell und schnell. Keine Wartezeiten, faire Preise.</p>
-            <ul class="service-card__list" aria-label="Smartphone-Reparatur-Leistungen">
-              <li class="service-card__list-item">Display Austausch</li>
-              <li class="service-card__list-item">Akku Austausch</li>
-              <li class="service-card__list-item">Kamera Reparatur</li>
-              <li class="service-card__list-item">Lautsprecher &amp; Mikrofon</li>
-              <li class="service-card__list-item">Powerbutton &amp; Home Button</li>
-              <li class="service-card__list-item">Backcover Reparatur</li>
-            </ul>
-            <span class="service-card__badge">Fokus: iPhone &amp; Huawei</span>
-          </article>
+  <!-- ============================================================
+       STATEMENT / QUOTE SECTION
+  ============================================================ -->
+  <section class="statement" aria-label="Markenbotschaft">
+    <div class="statement__inner">
+      <span class="statement__openquote reveal" aria-hidden="true">"</span>
+      <blockquote class="statement__quote reveal reveal--d1">
+        Für unsere anspruchsvollen Kundinnen und Kunden — sorgfältig ausgewählte Goldstücke in 22 und 14 Karat.
+      </blockquote>
+      <span class="statement__tr reveal reveal--d2">
+        Seçkin Müşterilerimiz için Özenle Üretilmiş 22 Ayar ve 14 ayar Altın Ürünlerimizi mağazamızda bulabilirsiniz.
+      </span>
+      <span class="statement__rule reveal reveal--d3" aria-hidden="true"></span>
+    </div>
+  </section>
 
-          <!-- Notebook -->
-          <article class="service-card" data-animate data-animate-delay="2">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <h3 class="h3 service-card__title">Notebook &amp; Laptop Reparatur</h3>
-            <p class="service-card__desc">Wir reparieren alle Laptops aller gängigen Hersteller: Apple, Acer, Lenovo, HP, Dell, Samsung und viele mehr — schnell und zu fairen Preisen.</p>
-            <ul class="service-card__list" aria-label="Notebook-Reparatur-Leistungen">
-              <li class="service-card__list-item">Display Austausch</li>
-              <li class="service-card__list-item">Festplatten &amp; SSD Austausch</li>
-              <li class="service-card__list-item">Arbeitsspeicher (RAM) Upgrade</li>
-              <li class="service-card__list-item">Laufwerk Austausch</li>
-              <li class="service-card__list-item">Softwarereparatur &amp; Virenentfernung</li>
-              <li class="service-card__list-item">Kostenloser Rückrufservice</li>
-            </ul>
-            <span class="service-card__badge">Kostenvoranschlag nur 20€</span>
-          </article>
 
-          <!-- MacBook -->
-          <article class="service-card" data-animate data-animate-delay="3">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 4h16v12H4z"/><circle cx="12" cy="10" r="2"/></svg>
-            </div>
-            <h3 class="h3 service-card__title">MacBook &amp; iMac Reparatur</h3>
-            <p class="service-card__desc">Spezialisiert auf Apple-Geräte: Wir reparieren MacBooks und iMacs aller Generationen — inkl. Wasserschäden und Mainboard-Reparaturen.</p>
-            <ul class="service-card__list" aria-label="MacBook-Reparatur-Leistungen">
-              <li class="service-card__list-item">Display Austausch</li>
-              <li class="service-card__list-item">SSD &amp; Festplatte</li>
-              <li class="service-card__list-item">Arbeitsspeicher Upgrade</li>
-              <li class="service-card__list-item">Wasserschaden-Reparatur</li>
-              <li class="service-card__list-item">Mainboard-Diagnose &amp; Reparatur</li>
-              <li class="service-card__list-item">Laufwerk-Austausch</li>
-            </ul>
-            <span class="service-card__badge">Apple-Spezialisten</span>
-          </article>
+  <!-- ============================================================
+       CONTACT & HOURS SECTION
+  ============================================================ -->
+  <section class="contact" id="kontakt" aria-labelledby="contact-heading">
+    <div class="contact__inner">
 
-          <!-- Wartung -->
-          <article class="service-card" data-animate data-animate-delay="4">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3 class="h3 service-card__title">Wartungsverträge für Unternehmen</h3>
-            <p class="service-card__desc">Flexibler Rundum-Service für Ihr Unternehmen: Alle anfallenden Reparaturen für einen monatlichen Festpreis — Sie zahlen nur noch Ersatzteile.</p>
-            <ul class="service-card__list" aria-label="Wartungsvertrag-Leistungen">
-              <li class="service-card__list-item">Hardware-Wartung (Lüfter, Laufwerke, Wärmeleitpaste)</li>
-              <li class="service-card__list-item">Software-Pflege &amp; Virenentfernung</li>
-              <li class="service-card__list-item">Alle Reparaturen zum Festpreis</li>
-              <li class="service-card__list-item">Schnelle Reaktionszeiten</li>
-              <li class="service-card__list-item">Individuelle Angebote</li>
-            </ul>
-            <span class="service-card__badge">Monatlicher Festpreis</span>
-          </article>
-        </div>
-      </div>
-    </section>
+      <!-- Contact info -->
+      <div>
+        <span class="section-label reveal">Besuchen Sie Uns</span>
+        <h2 class="section-heading reveal reveal--d1" id="contact-heading">
+          Wir freuen uns<br><em>auf Sie.</em>
+        </h2>
+        <span class="gold-rule reveal reveal--d2"></span>
 
-    <!-- ============================================================
-         WHY US
-    ============================================================ -->
-    <section class="section" id="warum" aria-labelledby="warum-heading">
-      <div class="container">
-        <div class="section-header" data-animate>
-          <span class="section-tag" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Warum RepairStation
-          </span>
-          <h2 class="h1" id="warum-heading">Reparieren lohnt sich —<br>besonders bei uns</h2>
-          <p class="lead">Jährlich werden in Deutschland über 6 Millionen Smartphones weggeworfen, obwohl sie nur kleinere Defekte aufweisen. Wir sind Ihr Partner, wenn Sie reparieren statt wegwerfen wollen.</p>
-        </div>
-        <div class="features__grid">
-          <div class="feature" data-animate data-animate-delay="1">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3 class="feature__title">Faire &amp; transparente Preise</h3>
-            <p class="feature__desc">Keine versteckten Kosten. Sie zahlen erst, wenn Ihr Gerät erfolgreich repariert wurde. Wir erklären alle Kosten vorab im persönlichen Gespräch.</p>
-          </div>
-          <div class="feature" data-animate data-animate-delay="2">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <h3 class="feature__title">Schnelle Reparaturzeiten</h3>
-            <p class="feature__desc">Viele Reparaturen erledigen wir noch am selben Tag. Durch unseren großen Ersatzteil-Vorrat können wir die meisten Defekte sofort beheben.</p>
-          </div>
-          <div class="feature" data-animate data-animate-delay="3">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3 class="feature__title">Datenschutz garantiert</h3>
-            <p class="feature__desc">Ihre privaten Daten bleiben bei Ihnen. Wir bauen Festplatten und Speicherchips auf Wunsch vor der Reparatur aus — so bleiben Ihre Daten sicher.</p>
-          </div>
-          <div class="feature" data-animate data-animate-delay="4">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3 class="feature__title">Erfahrene Techniker</h3>
-            <p class="feature__desc">Langjährige Erfahrung in der Reparatur aller gängigen Geräte. Nur qualifizierte Techniker arbeiten an Ihrem Smartphone, Laptop oder MacBook.</p>
-          </div>
-          <div class="feature" data-animate data-animate-delay="5">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            </div>
-            <h3 class="feature__title">Kostenloser Kostenvoranschlag</h3>
-            <p class="feature__desc">Das Beratungsgespräch ist kostenlos. Beim Notebook ist unser unverbindlicher Kostenvoranschlag für nur 20€ erhältlich — wird mit dem Reparaturauftrag verrechnet.</p>
-          </div>
-          <div class="feature" data-animate data-animate-delay="6">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3 class="feature__title">Lokal in Wiesbaden</h3>
-            <p class="feature__desc">Direkt im Herzen von Wiesbaden am Michelsberg 14. Kommen Sie einfach vorbei — ohne Termin. Ihr freundliches Team berät Sie gerne.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         PROCESS
-    ============================================================ -->
-    <section class="section process" id="ablauf" aria-labelledby="ablauf-heading">
-      <div class="container">
-        <div class="section-header section-header--center" data-animate>
-          <span class="section-tag">So einfach geht's</span>
-          <h2 class="h1 text-white" id="ablauf-heading">Reparatur in 4 einfachen Schritten</h2>
-          <p>Unkompliziert, transparent und schnell — Ihre Reparatur bei RepairStation.</p>
-        </div>
-        <div class="process__steps" role="list">
-          <div class="process__step" data-animate data-animate-delay="1" role="listitem">
-            <div class="process__step-num" aria-hidden="true">1</div>
-            <h3 class="process__step-title">Gerät vorbeibringen</h3>
-            <p class="process__step-desc">Bringen Sie Ihr defektes Gerät einfach in unsere Werkstatt am Michelsberg 14 in Wiesbaden — gerne auch ohne Voranmeldung.</p>
-          </div>
-          <div class="process__step" data-animate data-animate-delay="2" role="listitem">
-            <div class="process__step-num" aria-hidden="true">2</div>
-            <h3 class="process__step-title">Kostenlose Diagnose</h3>
-            <p class="process__step-desc">Unsere Techniker analysieren das Problem und erklären Ihnen beim persönlichen Annahmegespräch genau, was defekt ist und was die Reparatur kostet.</p>
-          </div>
-          <div class="process__step" data-animate data-animate-delay="3" role="listitem">
-            <div class="process__step-num" aria-hidden="true">3</div>
-            <h3 class="process__step-title">Professionelle Reparatur</h3>
-            <p class="process__step-desc">Wir reparieren Ihr Gerät mit hochwertigen Ersatzteilen — oft noch am selben Tag. Sie werden informiert, sobald Ihr Gerät fertig ist.</p>
-          </div>
-          <div class="process__step" data-animate data-animate-delay="4" role="listitem">
-            <div class="process__step-num" aria-hidden="true">4</div>
-            <h3 class="process__step-title">Abholung &amp; Zahlung</h3>
-            <p class="process__step-desc">Sie holen Ihr reparierten Gerät ab und zahlen erst dann. Keine Reparatur, keine Kosten. Klare Sache.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         SECURITY
-    ============================================================ -->
-    <section class="section security" id="sicherheit" aria-labelledby="sicherheit-heading">
-      <div class="container">
-        <div class="security__inner">
-          <div class="security__visual" aria-hidden="true">
-            <model-viewer
-              id="securityModel"
-              src="ohio.glb"
-              alt="3D Sicherheitsmodell"
-              auto-rotate
-              auto-rotate-delay="0"
-              rotation-per-second="30deg"
-              camera-controls
-              disable-zoom
-              interaction-prompt="none"
-              shadow-intensity="0"
-              exposure="1.1"
-              environment-image="neutral"
-            ></model-viewer>
+        <!-- Address -->
+        <div class="contact-item reveal reveal--d2">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-8 12-8 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
           </div>
           <div>
-            <div class="section-header" data-animate>
-              <span class="section-tag">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Datenschutz &amp; Sicherheit
-              </span>
-              <h2 class="h1" id="sicherheit-heading">Ihre Daten sind sicher —<br>nur bei Ihnen</h2>
-              <p class="lead">Wer ein defektes Gerät zur Reparatur gibt, macht sich Sorgen um seine privaten Daten. Bei RepairStation können Sie ganz sicher sein.</p>
-            </div>
-            <div class="security__points">
-              <div class="security__point" data-animate data-animate-delay="1">
-                <div class="security__point-icon" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div>
-                  <h4>Datenspeicher auf Wunsch entfernt</h4>
-                  <p>Wir bauen Festplatten und mobile Datenspeicher auf Wunsch vor der Reparatur aus — so bleiben Ihre Daten garantiert bei Ihnen und nur bei Ihnen.</p>
-                </div>
-              </div>
-              <div class="security__point" data-animate data-animate-delay="2">
-                <div class="security__point-icon" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                </div>
-                <div>
-                  <h4>Backup-Empfehlung</h4>
-                  <p>Bei Reparaturen, die einen Werksreset erfordern, empfehlen wir vorab eine Datensicherung. Unser Team hilft Ihnen dabei gerne.</p>
-                </div>
-              </div>
-              <div class="security__point" data-animate data-animate-delay="3">
-                <div class="security__point-icon" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <h4>Vertrauensbasierter Service</h4>
-                  <p>Transparenz ist unsere Stärke — Sie wissen zu jedem Zeitpunkt, was mit Ihrem Gerät passiert. Kein Reparaturschritt ohne Ihre Zustimmung.</p>
-                </div>
-              </div>
-            </div>
+            <span class="contact-item__label">Adresse</span>
+            <span class="contact-item__value">Wellritzstraße 29</span>
+            <span class="contact-item__sub">65183 Wiesbaden</span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ============================================================
-         REVIEWS
-    ============================================================ -->
-    <section class="section" id="bewertungen" aria-labelledby="bewertungen-heading">
-      <div class="container">
-        <div class="section-header" data-animate>
-          <span class="section-tag" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="#1D4ED8" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Kundenbewertungen
-          </span>
-          <h2 class="h1" id="bewertungen-heading">Was unsere Kunden sagen</h2>
-          <div class="reviews__header-meta" aria-label="Gesamtbewertung 4,9 von 5 Sternen aus 182 Google-Bewertungen">
-            <span class="reviews__score">4,9</span>
-            <div class="reviews__score-detail">
-              <div class="stars" aria-hidden="true">
-                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-              </div>
-              <span class="reviews__count">Basierend auf 182+ Google-Bewertungen</span>
-            </div>
+        <!-- Phone -->
+        <div class="contact-item reveal reveal--d3">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1.01h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.06 6.06l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 15.92v1z"/></svg>
           </div>
-        </div>
-        <div class="reviews__grid">
-
-          <!-- Jutta Hellbach -->
-          <article class="review-card" data-animate data-animate-delay="1">
-            <div class="review-card__header">
-              <div class="review-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#D97706,#F59E0B)">JH</div>
-              <div>
-                <div class="review-card__name">Jutta Hellbach</div>
-                <div class="review-card__date">Local Guide · vor 5 Monaten</div>
-              </div>
-            </div>
-            <div class="review-card__stars" aria-label="5 von 5 Sternen">
-              <div class="stars" aria-hidden="true"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            </div>
-            <p class="review-card__text">„Schnelle Hilfe bei besonderem Fall von Display-Schaden, sehr zu empfehlen, innerhalb weniger Stunden alles wieder gut — freundlich und kompetent."</p>
-            <div class="review-card__service">Display-Reparatur</div>
-          </article>
-
-          <!-- Ben Schneider -->
-          <article class="review-card" data-animate data-animate-delay="2">
-            <div class="review-card__header">
-              <div class="review-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#1D4ED8,#3B82F6)">BS</div>
-              <div>
-                <div class="review-card__name">Ben Schneider</div>
-                <div class="review-card__date">vor 10 Monaten</div>
-              </div>
-            </div>
-            <div class="review-card__stars" aria-label="5 von 5 Sternen">
-              <div class="stars" aria-hidden="true"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            </div>
-            <p class="review-card__text">„Display meines Sohn-iPhones tauschen lassen. Kostenvoranschlag kam vorab per freundlicher E-Mail. Reparatur war günstig, gut und schnell — das Handy ist wie neu. Mein Sohn ist begeistert, 5 Sterne!"</p>
-            <div class="review-card__service">iPhone Display Austausch</div>
-          </article>
-
-          <!-- Ahmet -->
-          <article class="review-card" data-animate data-animate-delay="3">
-            <div class="review-card__header">
-              <div class="review-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#059669,#10B981)">A</div>
-              <div>
-                <div class="review-card__name">Ahmet</div>
-                <div class="review-card__date">vor 2 Jahren</div>
-              </div>
-            </div>
-            <div class="review-card__stars" aria-label="5 von 5 Sternen">
-              <div class="stars" aria-hidden="true"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            </div>
-            <p class="review-card__text">„Perfektion — absolute Perfektion. Innerhalb von Minuten lief mein Laptop wieder. Ein anderer Service wollte 390€ mit 3 Wochen Wartezeit. RepairStation wollte nicht mal Geld dafür. Absolut genial und höchst professionell. Ab jetzt nur RepairStation."</p>
-            <div class="review-card__service">Laptop Display-Reparatur</div>
-          </article>
-
-          <!-- Linda Schultheis -->
-          <article class="review-card" data-animate data-animate-delay="4">
-            <div class="review-card__header">
-              <div class="review-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#DB2777,#EC4899)">LS</div>
-              <div>
-                <div class="review-card__name">Linda Schultheis</div>
-                <div class="review-card__date">vor 9 Monaten</div>
-              </div>
-            </div>
-            <div class="review-card__stars" aria-label="5 von 5 Sternen">
-              <div class="stars" aria-hidden="true"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            </div>
-            <p class="review-card__text">„Ich bin sehr zufrieden. Die Reparatur war nicht ganz einfach — sie haben sich sehr bemüht, das alte Gerät wieder zum Laufen zu bringen, mit Erfolg. Vielen Dank!"</p>
-            <div class="review-card__service">Geräte-Reparatur</div>
-          </article>
-
-          <!-- Katrin Klauer -->
-          <article class="review-card" data-animate data-animate-delay="5">
-            <div class="review-card__header">
-              <div class="review-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#EA580C,#F97316)">KK</div>
-              <div>
-                <div class="review-card__name">Katrin Klauer</div>
-                <div class="review-card__date">Local Guide · vor einem Jahr</div>
-              </div>
-            </div>
-            <div class="review-card__stars" aria-label="5 von 5 Sternen">
-              <div class="stars" aria-hidden="true"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            </div>
-            <p class="review-card__text">„Sehr kompetente und ausführliche Beratung, unkomplizierter und freundlicher Service — ich bin mit einer günstigen und perfekten Lösung aus dem Laden gegangen. Gerne wieder!"</p>
-            <div class="review-card__service">Beratung &amp; Reparatur</div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         FAQ
-    ============================================================ -->
-    <section class="section faq" id="faq" aria-labelledby="faq-heading">
-      <div class="container">
-        <div class="section-header section-header--center" data-animate>
-          <span class="section-tag" aria-hidden="true">FAQ</span>
-          <h2 class="h1" id="faq-heading">Häufig gestellte Fragen</h2>
-          <p class="lead">Haben Sie noch Fragen? Wir haben Antworten. Falls Ihr Anliegen nicht dabei ist, rufen Sie uns einfach an.</p>
-        </div>
-        <div class="faq__list" role="list">
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Wie lange dauert eine Reparatur?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Viele Reparaturen — wie Display- oder Akku-Tausch — erledigen wir noch am selben Tag. Da wir die gängigsten Ersatzteile auf Lager haben, entfallen lange Wartezeiten. Den genauen Zeitrahmen nennen wir Ihnen beim Annahmegespräch.</div>
-            </div>
-          </div>
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Was kostet ein Kostenvoranschlag?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Das Beratungsgespräch bei uns ist kostenlos. Für Notebooks bieten wir einen unverbindlichen Kostenvoranschlag für nur 20€ an — dieser Betrag wird Ihnen bei Auftragserteilung vollständig mit der Reparaturrechnung verrechnet.</div>
-            </div>
-          </div>
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Zahle ich auch, wenn das Gerät nicht repariert werden kann?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Nein. Sie zahlen unsere Reparatur nur dann, wenn der Defekt erfolgreich behoben wurde. Das ist unser Versprechen an Sie — faire Konditionen ohne versteckte Kosten.</div>
-            </div>
-          </div>
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Sind meine Daten bei der Reparatur sicher?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Ihre Privatsphäre hat bei uns höchste Priorität. Auf Wunsch bauen wir Festplatten und Speicherchips vor der Reparatur aus, sodass Ihre Daten nicht in unsere Hände gelangen. Wir empfehlen zudem immer, vorab ein Backup anzulegen.</div>
-            </div>
-          </div>
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Welche Geräte und Marken werden repariert?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Wir reparieren nahezu alle gängigen Smartphones (Apple, Samsung, Huawei und weitere), Notebooks aller Hersteller (Apple, Acer, Lenovo, Dell, HP, Samsung, Sony, Toshiba u. v. m.) sowie MacBooks und iMacs. Einfach anrufen oder vorbeikommen!</div>
-            </div>
-          </div>
-
-          <div class="faq__item" role="listitem">
-            <button class="faq__question" aria-expanded="false">
-              Brauche ich einen Termin?
-              <div class="faq__icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </button>
-            <div class="faq__answer">
-              <div class="faq__answer-inner">Nein, Sie können einfach ohne Termin zu uns kommen. Wir beraten Sie gerne direkt in unserem Shop am Michelsberg 14 in Wiesbaden. Alternativ können Sie uns auch vorab anrufen, wenn Sie sicher gehen möchten, dass ein Techniker verfügbar ist.</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CONTACT / CTA
-    ============================================================ -->
-    <section class="contact" id="kontakt" aria-labelledby="kontakt-heading">
-      <div class="container">
-        <div class="contact__inner">
           <div>
-            <span class="section-tag">Kontakt</span>
-            <h2 class="h1 contact__title" id="kontakt-heading">Bereit, Ihr Gerät<br>reparieren zu lassen?</h2>
-            <p class="contact__lead lead">Kommen Sie einfach vorbei oder rufen Sie uns an — wir sind Ihre freie, unabhängige Reparaturwerkstatt in Wiesbaden mit dem Versprechen fairer Preise.</p>
-            <div class="contact__info">
-              <div class="contact__info-item">
-                <div class="contact__info-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
-                </div>
-                <div>
-                  <div class="contact__info-label">Telefon</div>
-                  <div class="contact__info-value">
-                    <a href="tel:+4961158589987">0611 – 58589987</a> &nbsp;|&nbsp;
-                    <a href="tel:+4917641729199">0176 – 41729199</a>
-                  </div>
-                </div>
-              </div>
-              <div class="contact__info-item">
-                <div class="contact__info-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
-                <div>
-                  <div class="contact__info-label">E-Mail</div>
-                  <div class="contact__info-value"><a href="mailto:info@repairstation.de">info@repairstation.de</a></div>
-                </div>
-              </div>
-              <div class="contact__info-item">
-                <div class="contact__info-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                  <div class="contact__info-label">Adresse</div>
-                  <div class="contact__info-value">Michelsberg 14, 65183 Wiesbaden</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact__card" data-animate>
-            <h3 class="contact__hours-title">Öffnungszeiten</h3>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Montag – Freitag</span>
-              <span class="contact__hours-time">10:00 – 19:00 Uhr</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Samstag</span>
-              <span class="contact__hours-time">10:00 – 18:00 Uhr</span>
-            </div>
-            <div class="contact__hours-row">
-              <span class="contact__hours-day">Sonntag</span>
-              <span class="contact__hours-time" style="color:rgba(255,255,255,.35)">Geschlossen</span>
-            </div>
-            <div class="contact__cta-wrap">
-              <a href="tel:+4961158589987" class="btn btn--primary">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
-                Jetzt anrufen
-              </a>
-              <a href="mailto:info@repairstation.de" class="btn btn--secondary">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                E-Mail schreiben
-              </a>
-            </div>
+            <span class="contact-item__label">Telefon</span>
+            <a href="tel:+4961173419779" class="contact-item__value">0611 73419779</a>
+            <span class="contact-item__sub">Mo – Sa · 10:00 – 18:00 Uhr</span>
           </div>
         </div>
-      </div>
-    </section>
 
-  </main>
+        <!-- Website -->
+        <div class="contact-item reveal reveal--d4">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          <div>
+            <span class="contact-item__label">Website</span>
+            <a href="https://oromark.de" target="_blank" rel="noopener noreferrer" class="contact-item__value">oromark.de</a>
+            <span class="contact-item__sub">Weitere Informationen online</span>
+          </div>
+        </div>
+
+        <div class="reveal reveal--d4" style="margin-top:0.5rem">
+          <a
+            href="https://maps.google.com/?q=Wellritzstra%C3%9Fe+29%2C+65183+Wiesbaden"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--dark"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-7.5-8-12a8 8 0 0 1 16 0c0 4.5-8 12-8 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Route planen
+          </a>
+        </div>
+      </div>
+
+      <!-- Hours panel -->
+      <div class="hours-panel reveal reveal--d2" id="oeffnungszeiten">
+        <h3 class="hours-panel__title">Öffnungszeiten</h3>
+        <span class="hours-panel__subtitle">Wann Sie uns besuchen können</span>
+
+        <div role="list" aria-label="Öffnungszeiten">
+          <div class="hours-row" data-day="1" role="listitem">
+            <span class="hours-row__day">Montag</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row" data-day="2" role="listitem">
+            <span class="hours-row__day">Dienstag</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row" data-day="3" role="listitem">
+            <span class="hours-row__day">Mittwoch</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row" data-day="4" role="listitem">
+            <span class="hours-row__day">Donnerstag</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row" data-day="5" role="listitem">
+            <span class="hours-row__day">Freitag</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row" data-day="6" role="listitem">
+            <span class="hours-row__day">Samstag</span>
+            <span class="hours-row__time">10:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row hours-row--closed" data-day="0" role="listitem">
+            <span class="hours-row__day">Sonntag</span>
+            <span class="hours-row__time">Geschlossen</span>
+          </div>
+        </div>
+
+        <p class="hours-panel__note">
+          Für individuelle Wünsche oder besondere Anlässe kontaktieren Sie uns gerne auch telefonisch. Wir freuen uns auf Ihren Besuch.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
 
   <!-- ============================================================
        FOOTER
   ============================================================ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <div class="footer__logo-icon" aria-hidden="true">
-            <img src="superr.png" alt="" width="22" height="22" style="object-fit:contain;">
-          </div>
-          RepairStation
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div>
+          <span class="footer__brand-name">Juwelier Roza</span>
+          <span class="footer__brand-tagline">Goldschmuck · Wiesbaden</span>
+          <p class="footer__brand-desc">
+            Exklusiver Goldschmuck in 14 und 22 Karat für anspruchsvolle Kundinnen und Kunden. Persönliche Beratung, türkische Handwerkskunst, zeitloser Stil.
+          </p>
         </div>
-        <nav class="footer__links" aria-label="Footer-Navigation">
-          <a href="#services">Leistungen</a>
-          <a href="#warum">Warum wir</a>
-          <a href="#ablauf">Ablauf</a>
-          <a href="#faq">FAQ</a>
-          <a href="#kontakt">Kontakt</a>
+
+        <!-- Navigation -->
+        <nav aria-label="Footer-Navigation">
+          <span class="footer__col-title">Navigation</span>
+          <div class="footer__links">
+            <a href="#ueber-uns">Über Uns</a>
+            <a href="#kollektion">Kollektion</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#oeffnungszeiten">Öffnungszeiten</a>
+          </div>
         </nav>
-        <p class="footer__copy">&copy; 2024 RepairStation Wiesbaden · Michelsberg 14 · 65183 Wiesbaden</p>
+
+        <!-- Contact -->
+        <div>
+          <span class="footer__col-title">Kontakt</span>
+          <span class="footer__contact-line">Wellritzstraße 29<br>65183 Wiesbaden</span>
+          <span class="footer__contact-line"><a href="tel:+4961173419779">0611 73419779</a></span>
+          <span class="footer__contact-line"><a href="https://oromark.de" target="_blank" rel="noopener">oromark.de</a></span>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <span class="footer__col-title">Öffnungszeiten</span>
+          <div class="footer__hours-list">
+            <div class="footer__hours-row">
+              <span>Mo – Sa</span>
+              <span>10:00 – 18:00</span>
+            </div>
+            <div class="footer__hours-row">
+              <span>Sonntag</span>
+              <span>Geschlossen</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 Juwelier Roza, Wiesbaden. Alle Rechte vorbehalten.</span>
+        <div class="footer__legal">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
       </div>
     </div>
   </footer>
 
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
   <script>
-    // ============================================================
-    // Navigation scroll behavior
-    // ============================================================
-    const nav = document.getElementById('nav');
-    const handleScroll = () => {
-      if (window.scrollY > 40) {
-        nav.classList.add('nav--scrolled');
-      } else {
-        nav.classList.remove('nav--scrolled');
-      }
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    'use strict';
 
-    // ============================================================
+    // ────────────────────────────────────────────────────────────
+    // Navigation: scroll state
+    // ────────────────────────────────────────────────────────────
+    const nav = document.getElementById('mainNav');
+
+    function updateNav() {
+      nav.classList.toggle('is-scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+
+    // ────────────────────────────────────────────────────────────
     // Mobile menu
-    // ============================================================
-    const menuBtn = document.getElementById('menuBtn');
-    const menuClose = document.getElementById('menuClose');
-    const mobileMenu = document.getElementById('mobileMenu');
+    // ────────────────────────────────────────────────────────────
+    const hamburger   = document.getElementById('navHamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuClose   = document.getElementById('menuClose');
 
-    const openMenu = () => {
+    function openMenu() {
       mobileMenu.classList.add('is-open');
-      menuBtn.setAttribute('aria-expanded', 'true');
+      menuOverlay.classList.add('is-open');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
-    };
-    const closeMenu = () => {
+    }
+    function closeMenu() {
       mobileMenu.classList.remove('is-open');
-      menuBtn.setAttribute('aria-expanded', 'false');
+      menuOverlay.classList.remove('is-open');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
-    };
+    }
 
-    menuBtn.addEventListener('click', openMenu);
+    hamburger.addEventListener('click', openMenu);
     menuClose.addEventListener('click', closeMenu);
-
-    // Close menu on link click
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // Close on Escape
+    menuOverlay.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('.mobile-menu__link').forEach(el =>
+      el.addEventListener('click', closeMenu)
+    );
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeMenu();
     });
 
-    // ============================================================
-    // Scroll animations
-    // ============================================================
-    const animateEls = document.querySelectorAll('[data-animate]');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    animateEls.forEach(el => observer.observe(el));
+    // ────────────────────────────────────────────────────────────
+    // Seamless video loop – requestVideoFrameCallback
+    // Springt 0.1 s vor Ende zurück → kein Decoder-Gap, kein sichtbarer Cut.
+    // ────────────────────────────────────────────────────────────
+    (function initSeamlessLoop() {
+      var vid = document.getElementById('heroVidA');
 
-    // ============================================================
-    // FAQ Accordion
-    // ============================================================
-    const faqItems = document.querySelectorAll('.faq__item');
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq__question');
-      question.addEventListener('click', () => {
-        const isOpen = item.classList.contains('is-open');
-        // Close all
-        faqItems.forEach(i => {
-          i.classList.remove('is-open');
-          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+      // Crossfade ist direkt ins Video eingebacken (xfade-Filter).
+      // Natives loop-Attribut reicht – kein JS-Seek nötig.
+      vid.loop = true;
+
+      function start() {
+        vid.style.opacity = '1';
+        vid.play().catch(function() {
+          // Autoplay blockiert – bei erster Interaktion starten
+          var resume = function() {
+            vid.play().catch(function(){});
+            document.removeEventListener('touchstart', resume);
+            document.removeEventListener('click', resume);
+          };
+          document.addEventListener('touchstart', resume, { once: true, passive: true });
+          document.addEventListener('click', resume, { once: true });
         });
-        // Toggle clicked
-        if (!isOpen) {
-          item.classList.add('is-open');
-          question.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-
-    // ============================================================
-    // Smooth scroll for all anchor links
-    // ============================================================
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          const offset = 80;
-          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // ============================================================
-    // Hero badge pulse (live indicator)
-    // ============================================================
-    const dot = document.querySelector('.hero__badge-dot');
-    if (dot) {
-      setInterval(() => {
-        dot.style.opacity = dot.style.opacity === '0.4' ? '1' : '0.4';
-      }, 1200);
-    }
-
-    // Canvas animation removed — replaced by model-viewer (ohio.glb)
-    (function initSecurityAnim() {
-      const canvas = document.getElementById('securityAnim');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-      const W = 340, H = 340, cx = W / 2, cy = H / 2;
-      canvas.width = W; canvas.height = H;
-      let t = 0;
-
-      // Icosahedron vertices (unit sphere)
-      const phi = (1 + Math.sqrt(5)) / 2;
-      const raw = [
-        [-1, phi,0],[1,phi,0],[-1,-phi,0],[1,-phi,0],
-        [0,-1,phi],[0,1,phi],[0,-1,-phi],[0,1,-phi],
-        [phi,0,-1],[phi,0,1],[-phi,0,-1],[-phi,0,1]
-      ];
-      const icoVerts = raw.map(v => {
-        const len = Math.hypot(v[0],v[1],v[2]);
-        return v.map(c => c / len);
-      });
-      const icoEdges = [
-        [0,1],[0,5],[0,7],[0,10],[0,11],
-        [1,5],[1,7],[1,8],[1,9],
-        [2,3],[2,4],[2,10],[2,11],
-        [3,4],[3,6],[3,8],[3,9],
-        [4,5],[4,9],[4,11],
-        [5,9],[5,11],
-        [6,7],[6,8],[6,10],
-        [7,8],[7,10],
-        [8,9],[10,11]
-      ];
-
-      // Orbiting particles
-      const particles = Array.from({length: 55}, () => ({
-        theta: Math.random() * Math.PI * 2,
-        phi:   Math.random() * Math.PI,
-        r:     105 + Math.random() * 35,
-        speed: (Math.random() > .5 ? 1 : -1) * (0.004 + Math.random() * 0.007),
-        size:  .8 + Math.random() * 1.8,
-        alpha: .25 + Math.random() * .55
-      }));
-
-      function rotX(v, a) {
-        const c = Math.cos(a), s = Math.sin(a);
-        return [v[0], v[1]*c - v[2]*s, v[1]*s + v[2]*c];
-      }
-      function rotY(v, a) {
-        const c = Math.cos(a), s = Math.sin(a);
-        return [v[0]*c + v[2]*s, v[1], -v[0]*s + v[2]*c];
-      }
-      function proj(x, y, z) {
-        const fov = 3.5, dist = fov + z;
-        const sc = fov / dist;
-        return { px: cx + x * 110 * sc, py: cy + y * 110 * sc, sc };
       }
 
-      function draw() {
-        ctx.clearRect(0, 0, W, H);
+      vid.addEventListener('canplay', start, { once: true });
+      if (vid.readyState >= 3) start();
+      else vid.load();
 
-        t += 0.007;
-
-        // Background radial glow
-        const bg = ctx.createRadialGradient(cx, cy, 0, cx, cy, 130);
-        bg.addColorStop(0, 'rgba(29,78,216,.14)');
-        bg.addColorStop(.6,'rgba(29,78,216,.05)');
-        bg.addColorStop(1, 'rgba(29,78,216,0)');
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, W, H);
-
-        // Outer ring glow
-        const ring = ctx.createRadialGradient(cx, cy, 90, cx, cy, 145);
-        ring.addColorStop(0, 'rgba(59,130,246,0)');
-        ring.addColorStop(.5,'rgba(59,130,246,.07)');
-        ring.addColorStop(1, 'rgba(59,130,246,0)');
-        ctx.fillStyle = ring;
-        ctx.fillRect(0, 0, W, H);
-
-        // Particles
-        particles.forEach(p => {
-          p.theta += p.speed;
-          const sx = Math.sin(p.phi) * Math.cos(p.theta);
-          const sy = Math.sin(p.phi) * Math.sin(p.theta);
-          const sz = Math.cos(p.phi);
-          let v = [sx * p.r / 110, sy * p.r / 110, sz * p.r / 110];
-          v = rotX(v, t * .25);
-          v = rotY(v, t * .18);
-          const {px, py, sc} = proj(v[0], v[1], v[2] + 2);
-          const fade = Math.max(0, Math.min(1, (v[2] + 1) * .5 + .4));
-          ctx.beginPath();
-          ctx.arc(px, py, p.size * sc, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(147,197,253,${p.alpha * fade})`;
-          ctx.fill();
-        });
-
-        // Icosahedron
-        const tv = icoVerts.map(v => {
-          let r = rotX(v, t * .28);
-          return rotY(r, t);
-        });
-
-        // Edges (back-to-front)
-        const sorted = [...icoEdges].sort((a,b) =>
-          ((tv[a[0]][2]+tv[a[1]][2])/2) - ((tv[b[0]][2]+tv[b[1]][2])/2)
-        );
-        sorted.forEach(([i,j]) => {
-          const v1 = tv[i], v2 = tv[j];
-          const p1 = proj(v1[0], v1[1], v1[2]+2);
-          const p2 = proj(v2[0], v2[1], v2[2]+2);
-          const avgZ = (v1[2]+v2[2])/2;
-          const a = .08 + (avgZ+1) * .28;
-          const grd = ctx.createLinearGradient(p1.px, p1.py, p2.px, p2.py);
-          grd.addColorStop(0, `rgba(96,165,250,${a})`);
-          grd.addColorStop(.5,`rgba(147,197,253,${a+.15})`);
-          grd.addColorStop(1, `rgba(96,165,250,${a})`);
-          ctx.beginPath();
-          ctx.moveTo(p1.px, p1.py);
-          ctx.lineTo(p2.px, p2.py);
-          ctx.strokeStyle = grd;
-          ctx.lineWidth = .9;
-          ctx.stroke();
-        });
-
-        // Vertex dots
-        tv.forEach(v => {
-          const {px, py, sc} = proj(v[0], v[1], v[2]+2);
-          const a = .3 + (v[2]+1) * .35;
-          ctx.beginPath();
-          ctx.arc(px, py, 2.2 * sc, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(191,219,254,${a})`;
-          ctx.fill();
-        });
-
-        // Center shield (animated pulse)
-        const pulse = 1 + Math.sin(t * 2.5) * .04;
-        ctx.save();
-        ctx.translate(cx, cy);
-        ctx.scale(pulse, pulse);
-
-        // Shield glow
-        const sg = ctx.createRadialGradient(0, 0, 0, 0, 0, 42);
-        sg.addColorStop(0, 'rgba(59,130,246,.35)');
-        sg.addColorStop(1, 'rgba(59,130,246,0)');
-        ctx.fillStyle = sg;
-        ctx.beginPath();
-        ctx.arc(0, 0, 42, 0, Math.PI * 2);
-        ctx.fill();
-
-        // Shield fill
-        const sf = 3.2;
-        ctx.beginPath();
-        ctx.moveTo(0, -11*sf);
-        ctx.bezierCurveTo( 3*sf,-11*sf,  8*sf,-9*sf,  8*sf,-4*sf);
-        ctx.bezierCurveTo( 8*sf,  3*sf,  4*sf,  8*sf,  0,   11*sf);
-        ctx.bezierCurveTo(-4*sf,  8*sf, -8*sf,  3*sf, -8*sf,-4*sf);
-        ctx.bezierCurveTo(-8*sf, -9*sf, -3*sf,-11*sf,  0,  -11*sf);
-        ctx.closePath();
-        const sfg = ctx.createLinearGradient(0, -11*sf, 0, 11*sf);
-        sfg.addColorStop(0, 'rgba(59,130,246,.55)');
-        sfg.addColorStop(1, 'rgba(29,78,216,.35)');
-        ctx.fillStyle = sfg;
-        ctx.fill();
-
-        // Shield stroke
-        ctx.strokeStyle = 'rgba(147,197,253,.85)';
-        ctx.lineWidth = 1.6;
-        ctx.stroke();
-
-        // Checkmark
-        ctx.beginPath();
-        ctx.moveTo(-3.5*sf*.7, 0);
-        ctx.lineTo(-.5*sf*.7, 3*sf*.7);
-        ctx.lineTo(4.5*sf*.7,-3*sf*.7);
-        ctx.strokeStyle = 'rgba(255,255,255,.95)';
-        ctx.lineWidth = 2.2;
-        ctx.lineCap = 'round';
-        ctx.lineJoin = 'round';
-        ctx.stroke();
-
-        ctx.restore();
-
-        requestAnimationFrame(draw);
-      }
-
-      draw();
+      vid.addEventListener('error', function() {
+        var wrap = document.querySelector('.hero__video-wrap');
+        if (wrap) wrap.style.background = 'linear-gradient(148deg, #2A2318 0%, #0D0A06 100%)';
+      }, { once: true });
     })();
-  </script>
 
+
+    // ────────────────────────────────────────────────────────────
+    // HUIP animation – WebM VP9 mit echtem Alpha-Kanal
+    // ────────────────────────────────────────────────────────────
+    (function initRizz() {
+      var container = document.getElementById("rizzWrap");
+      function show(el) {
+        container.appendChild(el);
+        requestAnimationFrame(function() { container.classList.add("is-visible"); });
+      }
+      var vid = document.createElement("video");
+      vid.muted       = true;
+      vid.autoplay    = true;
+      vid.loop        = true;
+      vid.playsInline = true;
+      vid.setAttribute("aria-hidden", "true");
+      var srcWebM = document.createElement("source");
+      srcWebM.src  = "huip.webm";
+      srcWebM.type = "video/webm";
+      var srcMp4 = document.createElement("source");
+      srcMp4.src  = "huip.mp4";
+      srcMp4.type = "video/mp4";
+      vid.appendChild(srcWebM);
+      vid.appendChild(srcMp4);
+      vid.addEventListener("canplay", function() {
+        show(vid);
+        vid.play().catch(function(){});
+      }, { once: true });
+      vid.load();
+      window.addEventListener("load", function() {
+        setTimeout(function() {
+          if (!container.classList.contains("is-visible")) { vid.load(); }
+        }, 1000);
+      });
+    })();
+
+
+    // ────────────────────────────────────────────────────────────
+    // Hero logo fallback chain (PNG → SVG → hide gracefully)
+    // ────────────────────────────────────────────────────────────
+    (function initLogo() {
+      const logo = document.getElementById('heroLogo');
+      if (!logo) return;
+
+      const fallbacks = [
+        'Bilder/piner.png',
+        'Bilder/piner.svg',
+        'Bilder/piner.jpg',
+        'Bilder/piner.webp',
+      ];
+      let fi = 0;
+
+      logo.onerror = function () {
+        fi++;
+        if (fi < fallbacks.length) {
+          this.src = fallbacks[fi];
+        } else {
+          // If no logo file found, show text wordmark instead
+          this.style.display = 'none';
+          const wordmark = document.createElement('span');
+          wordmark.textContent = 'JUWELIER ROZA';
+          wordmark.style.cssText = [
+            'font-family:Cormorant Garamond,Georgia,serif',
+            'font-size:2.4rem',
+            'font-weight:400',
+            'letter-spacing:0.32em',
+            'color:#fff',
+            'text-transform:uppercase',
+          ].join(';');
+          this.parentNode.insertBefore(wordmark, this.nextSibling);
+        }
+      };
+    })();
+
+
+    // ────────────────────────────────────────────────────────────
+    // Scroll-reveal (Intersection Observer)
+    // ────────────────────────────────────────────────────────────
+    (function initReveal() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+
+
+    // ────────────────────────────────────────────────────────────
+    // Highlight today's opening hours row
+    // ────────────────────────────────────────────────────────────
+    (function highlightToday() {
+      const today = new Date().getDay(); // 0=Sun … 6=Sat
+      document.querySelectorAll('.hours-row').forEach(row => {
+        if (parseInt(row.dataset.day, 10) === today) {
+          row.classList.add('hours-row--today');
+          // Add "Heute" badge
+          const tag = document.createElement('span');
+          tag.className = 'hours-panel__today-tag';
+          tag.textContent = 'Heute';
+          tag.setAttribute('aria-label', 'Heute geöffnet');
+          row.querySelector('.hours-row__day').appendChild(tag);
+        }
+      });
+    })();
+
+
+    // ────────────────────────────────────────────────────────────
+    // Smooth anchor scrolling (respects fixed nav height)
+    // ────────────────────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const id = this.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const offset = nav.offsetHeight + 24;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    // ────────────────────────────────────────────────────────────
+    // GOLDENE RANKEN – verankert, nur Desktop (≥1024px)
+    // ────────────────────────────────────────────────────────────
+    (function initVines() {
+      if (window.matchMedia('(max-width: 1024px)').matches) return;
+
+      var cvs = document.getElementById('vineCanvas');
+      if (!cvs) return;
+      var ctx = cvs.getContext('2d');
+      var W = 0, H = 0;
+      var mouse       = { x: -9999, y: -9999 };
+      var vines       = [];
+      var fallenPetals = [];
+
+      /* ── GOLD-Palette ─────────────────────────────────────── */
+      var G = {
+        stem:   'rgba(185,145,55,',
+        bright: 'rgba(230,195,110,',
+        deep:   'rgba(150,110,35,',
+        glow:   'rgba(220,185,100,',
+      };
+
+      function gc(base, a) { return base + a + ')'; }
+
+      /* ── PRNG ──────────────────────────────────────────── */
+      var _s = 0xDEADC0DE;
+      function rng() {
+        _s ^= _s << 13; _s ^= _s >> 17; _s ^= _s << 5;
+        return (_s >>> 0) / 4294967295;
+      }
+      function rngSeed(v) { _s = (v ^ 0xABC12345) >>> 0; }
+
+      /* ── Ranke zeichnen ────────────────────────────────────── */
+      function drawVinePath(pts, lw, alpha, glowAmt) {
+        if (pts.length < 2) return;
+        if (glowAmt > 0.05) {
+          ctx.shadowColor = gc(G.glow, glowAmt * 0.7);
+          ctx.shadowBlur  = 4 + glowAmt * 20;
+        } else { ctx.shadowBlur = 0; }
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x, pts[0].y);
+        for (var i = 1; i < pts.length - 1; i++) {
+          var mx = (pts[i].x + pts[i+1].x) * 0.5;
+          var my = (pts[i].y + pts[i+1].y) * 0.5;
+          ctx.quadraticCurveTo(pts[i].x, pts[i].y, mx, my);
+        }
+        ctx.lineTo(pts[pts.length-1].x, pts[pts.length-1].y);
+        ctx.strokeStyle = gc(G.stem, alpha);
+        ctx.lineWidth   = lw;
+        ctx.lineCap     = 'round';
+        ctx.lineJoin    = 'round';
+        ctx.stroke();
+        ctx.shadowBlur  = 0;
+      }
+
+      /* ── Goldene Spirale / Tendril ─────────────────────────── */
+      function drawTendril(x, y, angle, size, alpha, glow) {
+        var loops = 1.8, steps = 40;
+        var pts = [];
+        for (var i = 0; i <= steps; i++) {
+          var t   = i / steps;
+          var r   = size * (1 - t * 0.85);
+          var a   = angle + t * Math.PI * 2 * loops;
+          pts.push({ x: x + Math.cos(a) * r, y: y + Math.sin(a) * r });
+        }
+        if (glow > 0.05) {
+          ctx.shadowColor = gc(G.glow, glow * 0.6);
+          ctx.shadowBlur  = 3 + glow * 14;
+        } else { ctx.shadowBlur = 0; }
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x, pts[0].y);
+        for (var j = 1; j < pts.length; j++) ctx.lineTo(pts[j].x, pts[j].y);
+        ctx.strokeStyle = gc(G.bright, alpha * 0.85);
+        ctx.lineWidth   = 0.8;
+        ctx.stroke();
+        ctx.shadowBlur  = 0;
+      }
+
+      /* ── Goldenes Blatt ───────────────────────────────────────── */
+      function drawLeaf(x, y, angle, size, alpha, glow) {
+        if (glow > 0.05) {
+          ctx.shadowColor = gc(G.glow, glow * 0.65);
+          ctx.shadowBlur  = 3 + glow * 12;
+        } else { ctx.shadowBlur = 0; }
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.bezierCurveTo( size*0.45, -size*0.2,  size*0.40, -size*0.8,  0, -size);
+        ctx.bezierCurveTo(-size*0.40, -size*0.8, -size*0.45, -size*0.2,  0,  0);
+        var g = ctx.createLinearGradient(0, 0, 0, -size);
+        g.addColorStop(0,   gc(G.deep,   alpha * 0.9));
+        g.addColorStop(0.5, gc(G.stem,   alpha * 0.85));
+        g.addColorStop(1,   gc(G.bright, alpha * 0.7));
+        ctx.fillStyle = g;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(0, 0); ctx.lineTo(0, -size);
+        ctx.strokeStyle = gc(G.bright, alpha * 0.4);
+        ctx.lineWidth = 0.5; ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.restore();
+      }
+
+      /* ── Goldene Rose ─────────────────────────────────────────── */
+      function drawRose(x, y, size, bloom, alpha, glow) {
+        var rings = [
+          { n: 5, rf: 0.15, sf: 0.28 },
+          { n: 6, rf: 0.32, sf: 0.40 },
+          { n: 7, rf: 0.55, sf: 0.52 },
+          { n: 8, rf: 0.78, sf: 0.65 },
+        ];
+        if (glow > 0.05) {
+          ctx.shadowColor = gc(G.glow, glow * 0.8);
+          ctx.shadowBlur  = 6 + glow * 22;
+        } else { ctx.shadowBlur = 0; }
+        ctx.save();
+        ctx.translate(x, y);
+        for (var r = rings.length - 1; r >= 0; r--) {
+          var ring     = rings[r];
+          var openness = Math.max(0, Math.min(1, (bloom - r * 0.20)));
+          var rad      = size * ring.rf * (0.3 + openness * 0.7);
+          var psz      = size * ring.sf * (0.35 + openness * 0.65);
+          var depth    = r / rings.length;
+          for (var i = 0; i < ring.n; i++) {
+            var a = (i / ring.n) * Math.PI * 2 + r * 0.3;
+            ctx.save();
+            ctx.rotate(a);
+            ctx.translate(0, -rad);
+            var c = depth > 0.5 ? 0.26 : 0.36;
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.bezierCurveTo( psz*c,  psz*0.05,  psz*c, -psz*0.85,  0, -psz);
+            ctx.bezierCurveTo(-psz*c, -psz*0.85, -psz*c,  psz*0.05,  0,  0);
+            var gr = ctx.createLinearGradient(0, 0, 0, -psz);
+            gr.addColorStop(0,   gc(G.deep,   alpha * 0.95));
+            gr.addColorStop(0.5, gc(G.stem,   alpha * 0.90));
+            gr.addColorStop(1,   gc(G.bright, alpha * 0.80));
+            ctx.fillStyle = gr;
+            ctx.fill();
+            ctx.strokeStyle = gc(G.deep, alpha * 0.3);
+            ctx.lineWidth = 0.3; ctx.stroke();
+            ctx.restore();
+          }
+        }
+        ctx.beginPath();
+        ctx.arc(0, 0, size * 0.10, 0, Math.PI * 2);
+        ctx.fillStyle = gc(G.bright, alpha);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.restore();
+      }
+
+      /* ── Ranken-Daten generieren ─────────────────────────────── */
+      function buildVines() {
+        rngSeed(0xC0DEB0CA);
+        vines = [];
+
+        var starts = [
+          { x: 0, y: H * 0.85, dir:  1 },
+          { x: 0, y: H * 0.50, dir:  1 },
+          { x: 0, y: H * 0.20, dir:  1 },
+          { x: W, y: H * 0.85, dir: -1 },
+          { x: W, y: H * 0.50, dir: -1 },
+          { x: W, y: H * 0.20, dir: -1 },
+        ];
+
+        for (var s = 0; s < starts.length; s++) {
+          buildVineCluster(starts[s].x, starts[s].y, starts[s].dir);
+        }
+      }
+
+      function buildVineCluster(rx, ry, dir) {
+        var mainLen = 3 + Math.floor(rng() * 3);
+        var pts     = [{ x: rx, y: ry }];
+        var x = rx, y = ry;
+        var angle = (dir > 0 ? 0 : Math.PI) + (rng() - 0.5) * 0.5 - 0.3;
+
+        for (var i = 0; i < mainLen; i++) {
+          var step = 60 + rng() * 80;
+          angle   += (rng() - 0.5) * 0.55;
+          x       += Math.cos(angle) * step;
+          y       += Math.sin(angle) * step - 20;
+          y        = Math.max(5, Math.min(H - 5, y));
+          pts.push({ x: x, y: y });
+        }
+
+        var leaves   = [];
+        var flowers  = [];
+        var tendrils = [];
+
+        for (var j = 1; j < pts.length; j++) {
+          if (rng() > 0.4) {
+            leaves.push({
+              x: pts[j].x + (rng() - 0.5) * 20,
+              y: pts[j].y + (rng() - 0.5) * 20,
+              angle: angle + dir * (0.6 + rng() * 0.8),
+              size:  10 + rng() * 14,
+              bloom: 0.5 + rng() * 0.5
+            });
+          }
+          if (rng() > 0.6) {
+            tendrils.push({
+              x: pts[j].x + (rng() - 0.5) * 15,
+              y: pts[j].y + (rng() - 0.5) * 15,
+              angle: rng() * Math.PI * 2,
+              size:  8 + rng() * 14
+            });
+          }
+        }
+
+        flowers.push({
+          x: pts[pts.length - 1].x,
+          y: pts[pts.length - 1].y,
+          size: 16 + rng() * 10,
+          bloom: 0.6 + rng() * 0.4
+        });
+        if (pts.length > 2) {
+          var mid = pts[Math.floor(pts.length * 0.5)];
+          if (rng() > 0.4) flowers.push({ x: mid.x, y: mid.y, size: 10 + rng() * 8, bloom: 0.4 + rng() * 0.5 });
+        }
+
+        var subVines = [];
+        for (var b = 1; b < pts.length - 1; b++) {
+          if (rng() > 0.5) {
+            var bx = pts[b].x, by = pts[b].y;
+            var bAngle = angle + dir * (0.8 + rng() * 0.6);
+            var bLen   = 2 + Math.floor(rng() * 2);
+            var bPts   = [{ x: bx, y: by }];
+            for (var bi = 0; bi < bLen; bi++) {
+              bAngle += (rng() - 0.5) * 0.5;
+              bx     += Math.cos(bAngle) * (40 + rng() * 50);
+              by     += Math.sin(bAngle) * (40 + rng() * 50) - 15;
+              bPts.push({ x: bx, y: by });
+            }
+            var subLeaves = [];
+            for (var sl = 0; sl < bPts.length; sl++) {
+              if (rng() > 0.5) subLeaves.push({ x: bPts[sl].x, y: bPts[sl].y, angle: bAngle + (rng()-0.5)*1.2, size: 8+rng()*10, bloom: 0.5+rng()*0.5 });
+            }
+            subVines.push({
+              pts: bPts, width: 1, leaves: subLeaves,
+              flower:  rng() > 0.5 ? { x: bPts[bPts.length-1].x, y: bPts[bPts.length-1].y, size: 9+rng()*8, bloom: 0.4+rng()*0.5 } : null,
+              tendril: { x: bPts[bPts.length-1].x, y: bPts[bPts.length-1].y, angle: bAngle, size: 10+rng()*10 }
+            });
+          }
+        }
+
+        vines.push({ pts: pts, width: 2.2, leaves: leaves, flowers: flowers, tendrils: tendrils, subVines: subVines, glow: 0 });
+      }
+
+      /* ── Glow anhand Mausabstand ─────────────────────────────── */
+      function calcGlow(pts) {
+        var R = 180, minD = Infinity;
+        for (var i = 0; i < pts.length; i++) {
+          var dx = pts[i].x - mouse.x, dy = pts[i].y - mouse.y;
+          var d  = Math.sqrt(dx*dx + dy*dy);
+          if (d < minD) minD = d;
+        }
+        return minD < R ? Math.pow(1 - minD / R, 2) : 0;
+      }
+
+      /* ── Alles zeichnen ──────────────────────────────────────── */
+      function drawAll() {
+        ctx.clearRect(0, 0, W, H);
+        for (var i = 0; i < vines.length; i++) {
+          var v   = vines[i];
+          var tgt = calcGlow(v.pts);
+          v.glow += (tgt - v.glow) * 0.1;
+          var g   = v.glow;
+          var a   = 0.55 + g * 0.35;
+
+          drawVinePath(v.pts, v.width, a, g);
+          for (var s = 0; s < v.subVines.length; s++) {
+            var sv  = v.subVines[s];
+            var sga = calcGlow(sv.pts);
+            drawVinePath(sv.pts, sv.width, 0.45 + sga*0.3, sga);
+            for (var sl = 0; sl < sv.leaves.length; sl++) {
+              var lsv = sv.leaves[sl];
+              drawLeaf(lsv.x, lsv.y, lsv.angle, lsv.size, 0.40 + sga*0.3, sga);
+            }
+            if (sv.flower) drawRose(sv.flower.x, sv.flower.y, sv.flower.size, sv.flower.bloom, 0.70 + sga*0.25, sga);
+            drawTendril(sv.tendril.x, sv.tendril.y, sv.tendril.angle, sv.tendril.size, 0.50 + sga*0.3, sga);
+          }
+          for (var lf = 0; lf < v.leaves.length; lf++) {
+            var leaf = v.leaves[lf];
+            drawLeaf(leaf.x, leaf.y, leaf.angle, leaf.size, a * 0.8, g);
+          }
+          for (var t = 0; t < v.tendrils.length; t++) {
+            var td = v.tendrils[t];
+            drawTendril(td.x, td.y, td.angle, td.size, a * 0.7, g);
+          }
+          for (var f = 0; f < v.flowers.length; f++) {
+            var fl = v.flowers[f];
+            drawRose(fl.x, fl.y, fl.size, fl.bloom, a * 0.95, g);
+          }
+        }
+        for (var p = fallenPetals.length - 1; p >= 0; p--) {
+          var petal = fallenPetals[p];
+          petal.vy += 0.10; petal.vx *= 0.995;
+          petal.x  += petal.vx; petal.y += petal.vy;
+          petal.rot += petal.spin; petal.alpha -= 0.007;
+          if (petal.alpha <= 0 || petal.y > H + 50) { fallenPetals.splice(p, 1); continue; }
+          ctx.save();
+          ctx.translate(petal.x, petal.y);
+          ctx.rotate(petal.rot);
+          ctx.globalAlpha = petal.alpha;
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo( petal.s*0.33,  petal.s*0.05,  petal.s*0.33, -petal.s*0.85,  0, -petal.s);
+          ctx.bezierCurveTo(-petal.s*0.33, -petal.s*0.85, -petal.s*0.33,  petal.s*0.05,  0,  0);
+          ctx.fillStyle = gc(G.bright, 1);
+          ctx.fill();
+          ctx.globalAlpha = 1;
+          ctx.restore();
+        }
+      }
+
+      /* ── Resize ──────────────────────────────────────────────────── */
+      function resize() {
+        var scene = document.getElementById('vineScene');
+        if (!scene) return;
+        W = cvs.width  = scene.offsetWidth;
+        H = cvs.height = scene.offsetHeight;
+        buildVines();
+      }
+
+      /* ── Render-Loop ─────────────────────────────────────────────── */
+      var lastTs = 0;
+      function draw(ts) {
+        requestAnimationFrame(draw);
+        if (ts - lastTs < 28) return;
+        lastTs = ts;
+        drawAll();
+      }
+
+      /* ── Mouse (relativ zur Szene) ───────────────────────────── */
+      var scene = document.getElementById('vineScene');
+      if (scene) {
+        scene.style.pointerEvents = 'auto';
+        scene.addEventListener('mousemove', function(e) {
+          var r   = scene.getBoundingClientRect();
+          mouse.x = e.clientX - r.left;
+          mouse.y = e.clientY - r.top;
+        });
+        scene.addEventListener('mouseleave', function() {
+          mouse.x = -9999; mouse.y = -9999;
+        });
+        scene.addEventListener('click', function(e) {
+          var r  = scene.getBoundingClientRect();
+          var mx = e.clientX - r.left, my = e.clientY - r.top;
+          for (var i = 0; i < vines.length; i++) {
+            var v   = vines[i];
+            var tip = v.pts[v.pts.length - 1];
+            var dx  = mx - tip.x, dy = my - tip.y;
+            if (Math.sqrt(dx*dx + dy*dy) < 70) {
+              for (var k = 0; k < 7; k++) {
+                fallenPetals.push({
+                  x: tip.x, y: tip.y,
+                  vx: (Math.random()-0.5)*3.5,
+                  vy: -2.5 - Math.random()*2.5,
+                  rot: Math.random()*Math.PI*2,
+                  spin: (Math.random()-0.5)*0.14,
+                  s: 5 + Math.random()*6,
+                  alpha: 0.9
+                });
+              }
+              return;
+            }
+          }
+        });
+      }
+
+      window.addEventListener('resize', function() {
+        clearTimeout(window._vineT);
+        window._vineT = setTimeout(resize, 150);
+      });
+
+      window.addEventListener('load', function() { setTimeout(resize, 100); });
+      resize();
+      requestAnimationFrame(draw);
+    })();
+
+
+  </script>
 </body>
 </html>

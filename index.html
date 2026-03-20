@@ -663,12 +663,14 @@
     }
     model-viewer#securityModel {
       display: block;
-      width: 340px;
-      height: 340px;
+      width: 100%;
+      max-width: 340px;
+      height: clamp(240px, 60vw, 340px);
       border-radius: var(--radius-xl);
       background: transparent;
       --progress-bar-color: transparent;
       --poster-color: transparent;
+      touch-action: pan-y;
     }
     .security__shield {
       width: 120px; height: 120px;
@@ -974,8 +976,8 @@
       .process__steps::before { display: none; }
       .process__step { padding: 0 0; margin-bottom: 32px; text-align: left; }
       .process__step-num { margin: 0 0 16px; }
-      .security__inner { grid-template-columns: 1fr; }
-      .security__visual { display: none; }
+      .security__inner { grid-template-columns: 1fr; gap: 36px; }
+      .security__visual { display: flex; justify-content: center; }
       .reviews__grid { grid-template-columns: 1fr; }
       .contact__inner { grid-template-columns: 1fr; gap: 40px; }
     }

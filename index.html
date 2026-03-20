@@ -659,6 +659,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 16px;
       overflow: hidden;
     }
     model-viewer#securityModel {
@@ -671,6 +672,19 @@
       --progress-bar-color: transparent;
       --poster-color: transparent;
       touch-action: pan-y;
+    }
+    model-viewer#megaModel {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      height: 340px;
+      border-radius: var(--radius-xl);
+      background: transparent;
+      --progress-bar-color: transparent;
+      --poster-color: transparent;
+    }
+    @media (max-width: 1023px) {
+      model-viewer#megaModel { display: none; }
     }
     .security__shield {
       width: 120px; height: 120px;
@@ -1325,6 +1339,20 @@
               id="securityModel"
               src="ohio.glb"
               alt="3D Sicherheitsmodell"
+              auto-rotate
+              auto-rotate-delay="0"
+              rotation-per-second="30deg"
+              camera-controls
+              disable-zoom
+              interaction-prompt="none"
+              shadow-intensity="0"
+              exposure="1.1"
+              environment-image="neutral"
+            ></model-viewer>
+            <model-viewer
+              id="megaModel"
+              src="3d-mega.glb"
+              alt="3D Mega Modell"
               auto-rotate
               auto-rotate-delay="0"
               rotation-per-second="30deg"
